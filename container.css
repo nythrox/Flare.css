@@ -1,0 +1,636 @@
+/*
+
+
+> * means column
+example
+.container > * {}
+means
+.container > .column {}
+that way column can mean anything, or doesnt even need to have a div
+*/
+
+.flexbox {
+    width:100%;
+    display:flex;
+}
+.container:not(.flexbox) > *{
+    min-width: 0
+    /*min-width: auto*/
+}
+.container {
+	width:100%;	
+	display:flex;
+    margin-right:auto;
+    margin-left:auto;
+    flex-wrap:wrap;
+}
+.container > * { /*used to be .container > .column*/
+    width:100%;
+    flex-grow:0;
+}
+.container:not(.fluid){
+    padding-right:25px;
+    padding-left:25px;
+}
+.container .container {
+    padding:0;
+}
+.singleline {
+    flex-wrap:nowrap;
+}
+/*-----------container rules--------*/
+    
+.container.fluid {
+    display:flex;
+    flex-wrap:wrap;
+}
+.fluid {
+    max-width:none;
+    width:100%;
+}
+/*------------------container attributes------------*/
+.mx-auto {margin:auto;}
+.nomax {max-width:100%;}
+.fullheight {height:100vh;}
+/*stretch, grow, etc for containers and columns*/
+.grow > * {flex-grow:1!important;}
+.self-grow {flex-grow:1!important;}
+
+.nogrow > *{flex-grow:0!important;}
+.self-nogrow{flex-grow:0!important}
+
+.shrink > * {flex-shrink:1!important}
+.self-shrink > * {flex-shrink:1!important}
+
+.noshrink > * {flex-shrink:0!important}
+.self-noshrink > * {flex-shrink:0!important}
+
+.stretch {align-items: stretch!important}
+.content-stretch {align-content: stretch!important}
+.self-stretch{align-self:stretch!important} 
+
+.nostretch{align-items:flex-start!important;}
+.content-nostretch{align-content:flex-start!important;}
+.self-nostretch{align-self:flex-start!important}
+
+/*positioning(right, left, top, bottom, middle) for containers*/
+.normal {align-items:flex-start!important;justify-content:flex-start!important;} 
+
+.left {justify-content: flex-start!important}
+.right {justify-content: flex-end!important}
+.center {justify-content: center!important}
+.between, .space-between {justify-content: space-between!important}
+.around, .space-around {justify-content: space-around!important}
+
+.self-top{align-self:flex-start!important}
+.self-middle{align-self:center!important}
+.self-bottom{align-self:flex-end!important}
+
+.top{align-items:flex-start!important}
+.middle{align-items:center!important}
+.bottom{align-items:flex-end!important}
+/*content treats each line of the flexbox, instead of each column individually*/
+.content-stretch {align-content: stretch!important}
+.content-middle {align-content:center!important}
+.content-bottom {align-items:flex-end!important}
+.content-top {align-content:flex-start!important}
+
+ /*@media(max-width:767px) phones and small tablets - small containers */
+ 
+.flexbox > *{
+    flex-grow:1;
+}
+.flexbox.multiline {
+    flex-wrap:wrap;
+}
+.flexbox.equal > *{
+    width:100%;
+}
+
+.row {display:flex;}
+ .flexbox {flex-wrap:wrap;}
+ 
+    .container {
+        /* padding-right:8%;
+        padding-left:8%; */
+        max-width:540px;
+    }
+    
+    .medium {
+        max-width:570px;
+    }
+    .small {
+        max-width:630px;
+    }
+
+    
+/*---------------------------automatic responsivenes----------------*/
+ 
+.size-one 										{width:25%}
+.size-two			 								{width:25%}
+.size-three 									{width:50%}
+.size-four,  .size-quarter 	{width:50%}
+.size-five 										{width:100%}
+.size-six 										{width:100%}
+.size-seven 									{width:100%}
+.size-eight,  .size-half 		{width:100%} /*in mobile, 50% becomes 100%*/
+.size-nine 										{width:100%}
+.size-ten 										{width:100%}
+.size-eleven 									{width:100%}
+.size-twelve			 						{width:100%}
+.size-thirteen 								{width:100%}
+.size-fourteen 								{width:100%}
+.size-fifteen 								{width:100%}
+.size-sixteen, .size-full 					{width:100%}
+
+.m-size-one 										{width:6.25%}
+.m-size-two								 			{width:12.5%}
+.m-size-three 									{width:18.75%}	
+.m-size-four,  .m-size-quarter 	{width:25%}
+.m-size-five 										{width:31.25%}
+.m-size-six 										{width:37.5%}
+.m-size-seven 									{width:43.75%}
+.m-size-eight,  .m-size-half		 	{width:50%}
+.m-size-nine 										{width:56.25%}
+.m-size-ten 										{width:62.5%}
+.m-size-eleven 									{width:68.75%}
+.m-size-twelve 									{width:75%}
+.m-size-thirteen 								{width:81.25%}
+.m-size-fourteen 								{width:87.5%}
+.m-size-fifteen 								{width:93.75%}
+.m-size-sixteen, .m-size-full 					{width:100%}	
+
+.one{width:25%}
+.two{width:25%}
+.three{width:50%}
+.four, .quarter{width:50%}
+.five{width:100%}
+.six{width:100%}
+.seven{width:100%}
+.eight, .half{width:100%;}
+.nine{width:100%}
+.ten{width:100%}
+.eleven{width:100%}
+.twelve{width:100%}
+.thirteen{width:100%}
+.fourteen{width:100%}
+.fifteen{width:100%}
+.sixteen, .full{width:100%}
+
+.equal-two > *    {width:100%;}
+.equal-three > *  {width:100%;}
+.equal-four > *   {width:100%;}
+.equal-five > *   {width:100%;}
+.equal-six > *    {width:50%;}
+.equal-seven > *  {width:33.333333%;}
+.equal-eight > *  {width:33.333333%;}
+.equal-nine > *   {width:33.333333%;}
+.equal-ten > *    {width:33.333333%;}
+.equal-eleven > * {width:33.333333%;}
+.equal-twelve > * {width:25%;}
+
+.m-equal-one > *        {width:100%; }
+.m-equal-two > *        {width:50%; }
+.m-equal-three > *      {width:33.3333333%;}
+.m-equal-four > *       {width:25%;}
+.m-equal-five > *       {width:20%;} 
+.m-equal-six > *        {width:16.6666667%;}
+.m-equal-seven > *      {width:14.2%;}
+.m-equal-eight > *      {width:12.5%;}
+.m-equal-nine > *       {width:11.111111111%;}
+.m-equal-ten > *        {width:10%;}
+.m-equal-eleven > *     {width:9.09090909%;}
+.m-equal-twelve > *     {width:8.3333333%;}
+
+/*specific definition of responsiveness by user, user usually should not have to use*/
+.m-one{width:6.25%}
+.m-two{width:12.5%}
+.m-three{width:18.75%}
+.m-four, .m-quarter{width:25%}
+.m-five{width:31.25%}
+.m-six{width:37.5%}
+.m-seven{width:43.75%}
+.m-eight, .m-half{width:50%}
+.m-nine{width:56.25%}
+.m-ten{width:62.5%}
+.m-eleven{width:68.75%}
+.m-twelve{width:75%}
+.m-thirteen{width:81.25%} 
+.m-fourteen{width:87.5%}
+.m-fifteen{width:93.75%}
+.m-sixteen, .m-full{width:100%}
+
+@media(min-width:768px){/*bigger tablets will have a computer-like layout. smaller ones will count as phones*/
+/*lots of container space so items can be side by side*/
+
+.flexbox.t-equal > *{
+    width:100%;
+}
+.container {
+        /* padding-right:2%;
+        padding-left:2%; */
+    max-width:670px;
+		}
+        
+        
+.medium {
+    max-width:600px;
+}
+	.small {
+    max-width:800px;
+    }
+    
+    
+    /*automatic responsiveness*/
+    
+	 .size-one 										{width:12.5%} /*eight in a row instead of 16*/
+	 .size-two								 	    {width:20%} /*five in a row instead of eight*/
+	 .size-three 									{width:22.2222222%;} /*four.5 instead of five. needs to be centralized*/
+	 .size-four,  .size-quarter 	                {width:33%} /*three instead of 4. needs to be centralized*/
+	 .size-five 									{width:33.33333333%} /*one instead of 3, needs to be centralized*/
+	 .size-six 										{width:55%} /*one instead of two, needs to be centralized*/
+	 .size-seven 									{width:60%}/*one instead of two, needs to be centralized*/
+	 .size-eight,  .size-half		 	            {width:65%}/*two instead of twom	*/
+     .size-nine 									{width:70%}
+	 .size-ten 										{width:75%}
+	 .size-eleven 									{width:80%}
+	 .size-twelve 									{width:85%}
+	 .size-thirteen 								{width:90%}
+	 .size-fourteen 								{width:95%}
+	 .size-fifteen 							    	{width:97.25%}
+     .size-sixteen, .size-full 					    {width:100%}	
+     
+    .t-size-one 										{width:6.25%}
+    .t-size-two								 			{width:12.5%}
+    .t-size-three 						    			{width:18.75%}	
+    .t-size-four,  .t-size-quarter 	                    {width:25%}
+    .t-size-five 										{width:31.25%}
+    .t-size-six 										{width:37.5%}
+    .t-size-seven 								    	{width:43.75%}
+    .t-size-eight,  .t-size-half		             	{width:50%}
+    .t-size-nine 										{width:56.25%}
+    .t-size-ten 										{width:62.5%}
+    .t-size-eleven 								    	{width:68.75%}
+    .t-size-twelve 									    {width:75%}
+    .t-size-thirteen 								    {width:81.25%}
+    .t-size-fourteen 							    	{width:87.5%}
+    .t-size-fifteen 							    	{width:93.75%}
+    .t-size-sixteen, .t-size-full 				    	{width:100%}	
+
+	.one{width:12.5%}
+	.two{width:20%}
+	.three{width:22.2222222%;}
+	.four, .quarter{width:33%}
+	.five{width:33.33333333%}
+	.six{width:50%}
+	.seven{width:100%}
+	.eight, .half{width:100%}
+	.nine{width:100%}
+	.ten{width:100%}
+	.eleven{width:100%}
+	.twelve{width:100%}
+	.thirteen{width:100%}
+	.fourteen{width:100%}
+	.fifteen{width:100%}
+	.sixteen, .full{width:100%}
+
+	.equal-two > *        {width:100%; }
+	.equal-three > *      {width:100%;}
+	.equal-four > *       {width:50%;}
+	.equal-five > *       {width:33.3333333%;}
+	.equal-six > *        {width:33.3333333%;}
+	.equal-seven > *      {width:33.3333333%;}
+	.equal-eight > *      {width:25%;}
+	.equal-nine > *       {width:25%;}
+	.equal-ten > *        {width:20%;}
+	.equal-eleven > *     {width:20%;}
+    .equal-twelve > *     {width:16.6666667%;}
+
+    .t-equal-one > *        { width:100%; }
+    .t-equal-two > *        { width:50%; }
+    .t-equal-three > *      {	width:33.3333333%;}
+    .t-equal-four > *       { width:25%;}
+    .t-equal-five > *       {width:20%;} 
+    .t-equal-six > *        {width:16.6666667%;}
+    .t-equal-seven > *      {width:14.2%;}
+    .t-equal-eight > *      {width:12.5%;}
+    .t-equal-nine > *       {width:11.111111111%;}
+    .t-equal-ten > *        {width:10%;}
+    .t-equal-eleven > *     {width:9.09090909%;}
+    .t-equal-twelve > *     {width:8.3333333%;}
+    
+	.t-one{width:6.25%}
+	.t-two{width:12.50%}
+	.t-three{width:18.75%}
+	.t-four, .t-quarter{width:25%}
+	.t-five{width:31.25%}
+	.t-six{width:37.5%}
+	.t-seven{width:43.75%}
+	.t-eight, .t-half{width:50%}
+	.t-nine{width:56.25%}
+	.t-ten{width:62.5%}
+	.t-eleven{width:68.75%}
+	.t-twelve{width:75%}
+	.t-thirteen{width:81.25%}
+	.t-fourteen{width:87.5%}
+	.t-fifteen{width:93.75%}
+	.t-sixteen, .t-full{width:100%}
+     
+}
+
+@media(min-width:901px){/*small notebooks and up*/
+
+	
+    .flexbox {
+        flex-wrap:nowrap;
+    }
+    .flexbox.equal > *{
+        width:0%;
+        flex-grow:1;
+    }
+    .flexbox.c-equal > *{
+        width:100%;
+    }
+/*-----------------container types-------------*/
+.container {
+    max-width:900px;
+}
+.small {
+    max-width:760px;
+}
+.medium {
+    max-width:800px;
+}
+    /*---------------------------automatic responsivenes----------------*/
+ 
+    .size-one 										{width:6.25%}
+    .size-two								 			{width:12.5%}
+    .size-three 									{width:18.75%}	
+    .size-four,  .size-quarter 	{width:25%}
+    .size-five 										{width:31.25%}
+    .size-six 										{width:37.5%}
+    .size-seven 									{width:43.75%}
+    .size-eight,  .size-half		 	{width:50%}
+    .size-nine 										{width:56.25%}
+    .size-ten 										{width:62.5%}
+    .size-eleven 									{width:68.75%}
+    .size-twelve 									{width:75%}
+    .size-thirteen 								{width:81.25%}
+    .size-fourteen 								{width:87.5%}
+    .size-fifteen 								{width:93.75%}
+    .size-sixteen, .size-full 					{width:100%}	
+    
+    .c-size-one 										{width:6.25%}
+    .c-size-two								 			{width:12.5%}
+    .c-size-three 									{width:18.75%}	
+    .c-size-four,  .c-size-quarter 	{width:25%}
+    .c-size-five 										{width:31.25%}
+    .c-size-six 										{width:37.5%}
+    .c-size-seven 									{width:43.75%}
+    .c-size-eight,  .c-size-half		 	{width:50%}
+    .c-size-nine 										{width:56.25%}
+    .c-size-ten 										{width:62.5%}
+    .c-size-eleven 									{width:68.75%}
+    .c-size-twelve 									{width:75%}
+    .c-size-thirteen 								{width:81.25%}
+    .c-size-fourteen 								{width:87.5%}
+    .c-size-fifteen 								{width:93.75%}
+    .c-size-sixteen, .c-size-full 					{width:100%}	
+    /*you can choose to use c-equal or just equal (on lg and up only)*/
+    .equal-two > *        { width:50%; }
+    .equal-three > *      { width:33.3333333%;}
+    .equal-four > *       { width:25%;}
+    .equal-five > *       { width:20%;} 
+    .equal-six > *        { width:16.6666667%;}
+    .equal-seven > *      { width:14.2%;}
+    .equal-eight > *      { width:12.5%;}
+    .equal-nine > *       { width:11.111111111%;}
+    .equal-ten > *        { width:10%;}
+    .equal-eleven > *     { width:9.09090909%;}
+    .equal-twelve > *     { width:8.3333333%;} 
+ 
+    .c-equal-one > *        { width:100%; }
+    .c-equal-two > *        { width:50%; }
+    .c-equal-three > *      {	width:33.3333333%;}
+    .c-equal-four > *       { width:25%;}
+    .c-equal-five > *       {width:20%;} 
+    .c-equal-six > *        {width:16.6666667%;}
+    .c-equal-seven > *      {width:14.2%;}
+    .c-equal-eight > *      {width:12.5%;}
+    .c-equal-nine > *       {width:11.111111111%;}
+    .c-equal-ten > *        {width:10%;}
+    .c-equal-eleven > *     {width:9.09090909%;}
+    .c-equal-twelve > *     {width:8.3333333%;}
+
+	.one,.c-one{ width:6.25%}
+	.two,.c-two{ width:12.5%}
+	.three,.c-three{ width:18.75%}
+	.four,.c-four, .quarter,.c-quarter{ width:25%}
+	.five,.c-five{ width:31.25%}
+	.six,.c-six{ width:37.5%}
+	.seven,.c-seven{ width:43.75%}
+	.eight,.c-eight, .half,.c-half{ width:50%;}
+	.nine,.c-nine{ width:56.25%}
+	.ten,.c-ten{ width:62.5%}
+	.eleven,.c-eleven{ width:68.75%}
+	.twelve,.c-twelve{ width:75%}
+	.thirteen,.c-thirteen{ width:81.25%}
+	.fourteen,.c-fourteen{ width:87.5%}
+	.fifteen,.c-fifteen{ width:93.75%}
+    .sixteen,.c-sixteen, .full,.c-two{ width:100%}
+    
+	/* .c-one{width:6.25%}
+	.c-two{width:12.50%}
+	.c-three{width:18.75%}
+	.c-four, .c-quarter{width:25%}
+	.c-five{width:31.25%}
+	.c-six{width:37.5%}
+	.c-seven{width:43.75%}
+	.c-eight, .c-half{width:50%}
+	.c-nine{width:56.25%}
+	.c-ten{width:62.5%}
+	.c-eleven{width:68.75%}
+	.c-twelve{width:75%}
+	.c-thirteen{width:81.25%}
+	.c-fourteen{width:87.5%}
+	.c-fifteen{width:93.75%}
+	.c-sixteen, .c-full{width:100%} */
+
+    
+    
+    /*specific definition of responsiveness by user, user usually should not have to use*/
+}
+
+@media(min-width:1150px) { /*normal sized notebooks*/
+    
+    .container {
+        max-width:1140px;
+    }
+    .small {
+        max-width:900px;
+    }
+    .medium {
+        max-width:1040px;
+    }
+    
+.container[class*="g-size-"]{
+    max-width:none;
+}
+    .g-size-one 										{width:6.25%}
+    .g-size-two								 			{width:12.5%}
+    .g-size-three 									{width:18.75%}	
+    .g-size-four,  .g-size-quarter 	{width:25%}
+    .g-size-five 										{width:31.25%}
+    .g-size-six 										{width:37.5%}
+    .g-size-seven 									{width:43.75%}
+    .g-size-eight,  .g-size-half		 	{width:50%}
+    .g-size-nine 										{width:56.25%}
+    .g-size-ten 										{width:62.5%}
+    .g-size-eleven 									{width:68.75%}
+    .g-size-twelve 									{width:75%}
+    .g-size-thirteen 								{width:81.25%}
+    .g-size-fourteen 								{width:87.5%}
+    .g-size-fifteen 								{width:93.75%}
+    .g-size-sixteen, .g-size-full 					{width:100%}	
+    
+    .g-equal-one > *        { width:100%; }
+    .g-equal-two > *        { width:50%; }
+    .g-equal-three > *      {	width:33.3333333%;}
+    .g-equal-four > *       { width:25%;}
+    .g-equal-five > *       {width:20%;} 
+    .g-equal-six > *        {width:16.6666667%;}
+    .g-equal-seven > *      {width:14.2%;}
+    .g-equal-eight > *      {width:12.5%;}
+    .g-equal-nine > *       {width:11.111111111%;}
+    .g-equal-ten > *        {width:10%;}
+    .g-equal-eleven > *     {width:9.09090909%;}
+    .g-equal-twelve > *     {width:8.3333333%;}
+    
+	.g-one{width:6.25%}
+	.g-two{width:12.50%}
+	.g-three{width:18.75%}
+	.g-four, .g-quarter{width:25%}
+	.g-five{width:31.25%}
+	.g-six{width:37.5%}
+	.g-seven{width:43.75%}
+	.g-eight, .g-half{width:50%}
+	.g-nine{width:56.25%}
+	.g-ten{width:62.5%}
+	.g-eleven{width:68.75%}
+	.g-twelve{width:75%}
+	.g-thirteen{width:81.25%}
+	.g-fourteen{width:87.5%}
+	.g-fifteen{width:93.75%}
+	.g-sixteen, .g-full{width:100%}
+     
+    }
+
+    
+@media(min-width:1650px) { /*computers*/
+    
+    .container {
+        max-width:1540px;
+    }
+    .small {
+        max-width:1300px;
+    }
+    .medium {
+        max-width:1440px;
+    }
+}
+@media(min-width:3000px) {
+    .container {
+        max-width:1540px;
+    }
+    .small {
+        max-width:1300px;
+    }
+    .medium {
+        max-width:1440px;
+    }
+    .g-size-one 										{width:6.25%}
+    .gg-size-two								 			{width:12.5%}
+    .gg-size-three 									{width:18.75%}	
+    .gg-size-four,  .gg-size-quarter 	{width:25%}
+    .gg-size-five 										{width:31.25%}
+    .gg-size-six 										{width:37.5%}
+    .gg-size-seven 									{width:43.75%}
+    .gg-size-eight,  .gg-size-half		 	{width:50%}
+    .gg-size-nine 										{width:56.25%}
+    .gg-size-ten 										{width:62.5%}
+    .gg-size-eleven 									{width:68.75%}
+    .gg-size-twelve 									{width:75%}
+    .gg-size-thirteen 								{width:81.25%}
+    .gg-size-fourteen 								{width:87.5%}
+    .gg-size-fifteen 								{width:93.75%}
+    .gg-size-sixteen, .gg-size-full 					{width:100%}	
+ 
+    .gg-equal-one > *        { width:100%; }
+    .gg-equal-two > *        { width:50%; }
+    .gg-equal-three > *      {	width:33.3333333%;}
+    .gg-equal-four > *       { width:25%;}
+    .gg-equal-five > *       {width:20%;} 
+    .gg-equal-six > *        {width:16.6666667%;}
+    .gg-equal-seven > *      {width:14.2%;}
+    .gg-equal-eight > *      {width:12.5%;}
+    .gg-equal-nine > *       {width:11.111111111%;}
+    .gg-equal-ten > *        {width:10%;}
+    .gg-equal-eleven > *     {width:9.09090909%;}
+    .gg-equal-twelve > *     {width:8.3333333%;}
+    
+	.gg-one{width:6.25%}
+	.gg-two{width:12.50%}
+	.gg-three{width:18.75%}
+	.gg-four, .gg-quarter{width:25%}
+	.gg-five{width:31.25%}
+	.gg-six{width:37.5%}
+	.gg-seven{width:43.75%}
+	.gg-eight, .gg-half{width:50%}
+	.gg-nine{width:56.25%}
+	.gg-ten{width:62.5%}
+	.gg-eleven{width:68.75%}
+	.gg-twelve{width:75%}
+	.gg-thirteen{width:81.25%}
+	.gg-fourteen{width:87.5%}
+	.gg-fifteen{width:93.75%}
+	.gg-sixteen, .gg-full{width:100%}
+     
+    
+    }
+
+.container[class*=" size-"]{/*no max-width for those who are using container size-number instead of container small/container/medium*/
+    max-width:none;
+}
+.container > .title {
+    width:100%;
+}
+@media(max-width:767px) {
+    .container[class*="m-size-"]{
+        max-width:none;
+    }
+    .flexbox.m-equal > *{
+        width:100%;
+    }
+    
+}
+@media(min-width:768px) and (max-width:900px){
+    .container[class*="t-size-"]{
+        max-width:none;
+    }
+}
+
+.no-gutter {
+    padding-right:0px!important;  
+    padding-left:0px!important;   
+}
+.no-gutters > * {
+    padding-right:0px!important;  
+    padding-left:0px!important;   
+}
+
+.fluid {
+    max-width:none;
+}   
+.container.fluid {
+    max-width:none;
+}
