@@ -1,8 +1,8 @@
 # Flare.css
-Lightweight CSS Layout framework
-#Introduction
+Flare is a modern CSS library that allows you to create responsive layouts with less code.
+<h2>Automatic Responsiveness</h2>
 <p>
-The idea behind flare is to be able to let you program layouts with less lines of code and give you more options for building, without limiting you in any ways or making your website slow.
+Flare handle responsiveness automatically, but also gives you the option to manually control it.
 </p>
 <p>
 Automatic Responsiveness, Flexbox, different containers, being lightweight and short readable code are the main differencials that flare has from bootstrap, but they are all optional and do not restrict or limit how you program, or interfere with other frameworks..
