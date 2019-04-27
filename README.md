@@ -4,9 +4,14 @@ Flare is a modern CSS library that allows you to create responsive layouts with 
 <p>
 Flare handle responsiveness automatically, but also gives you the option to manually control it.
 </p>
+<p>When creating a layout, you have the option to define all column sizes on breakpoints, to let Flare handle the sizes, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
+<h2>More Containers</h2>
+<p>Flare gives you many diffrent sized containers, with container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
 <p>
 Automatic Responsiveness, Flexbox, different containers, being lightweight and short readable code are the main differencials that flare has from bootstrap, but they are all optional and do not restrict or limit how you program, or interfere with other frameworks..
 </p>
+<h1>Lighter & Faster code, Faster solutions, Faster production, Faster workflow</h1>
+<p>The main objective of Flare is to let you build websites faster, without restricting your code or slowing your website.</p>
 <h1>Column</h1>
 <p>
 Columns are the building blocks of flare. We give them sizes and add
