@@ -49,10 +49,12 @@ that way column can mean anything, or doesnt even need to have a div
     width:100%;
 }
 /*------------------container attributes------------*/
-.mx-auto {margin:auto;}
 .nomax {max-width:100%;}
 .fullheight {height:100vh;}
 /*stretch, grow, etc for containers and columns*/
+.mx-auto > * {margin:auto;}
+.self-mx-auto {margin:auto;}
+
 .grow > * {flex-grow:1!important;}
 .self-grow {flex-grow:1!important;}
 
