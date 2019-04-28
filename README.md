@@ -4,7 +4,7 @@ Flare is a modern CSS library that allows you to create responsive layouts with 
 <p>
 Flare can handle responsiveness automatically but also gives you the option to manually control it.
 </p>
-<p>When creating a layout, you have the option to define all column sizes on breakpoints, to let Flare handle the sizes, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
+<p>When creating a layout, you have the option to define all column sizes on certain breakpoints, or to define the column sizes only on computer and let Flare handle the sizes on other breakpoints, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
 <h2>Block layout and Flex layout</h2>
 <p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs or even combine both.</p>
 <h2>More Containers, More sizes</h2>
