@@ -130,6 +130,9 @@ that way column can mean anything, or doesnt even need to have a div
 .flexbox.multiline {
     flex-wrap:wrap;
 }
+.flexbox[class*="equal-"]{
+    flex-wrap:wrap;
+}
 .flexbox.equal > *{
     width:100%;
 }
@@ -632,7 +635,7 @@ that way column can mean anything, or doesnt even need to have a div
 .container > .title {
     width:100%;
 }
-@media(max-width:767px) {
+@media(max-width:768px) {
     .container[class*="m-size-"]{
         max-width:none;
     }
