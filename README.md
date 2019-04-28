@@ -113,8 +113,83 @@ container and sixteen being 100%.
 <p>If you dont like the result on a certain screen size, you can always add a extra modifier <code>column eight t&#8209;twelve</code> &#8209; Flare will handle on mobile, but on tablet it will have the size of twelve</p>
 <br>
 <p>Or if you dont want to use automatic responsiveness at all, you can build from mobile up using the breakpoint tags <code>column m&#8209;sixteen t&#8209;fourteen c&#8209;twelve</code> Without automatic responsiveness, each breakpoint tag counts for itself and up (Example: t&#8209;eight will make the column size eight for tablet, computer, television, etc)</p>
-<h1>How to Build, Guidelines, Best Practices</h1>
-<p></p>
+
 <h1>Attributes:</h1>
 <p>Column</p>
 <p>container and flexbox</p>
+<h4>Tags to put in a column</h4>
+<ul>
+  <li>(breakpoint-)number</li>
+  <br>
+  <li>self-grow (horizontally)</li>
+  <li>self-nogrow (horizontally)</li>
+  <li>self-stretch (vertically)</li>
+  <li>self-nostretch (vertically)</li>
+  <li>self-shrink (horizontally)</li>
+  <li>self-noshrink (horizontally)</li>
+  <li>self-left</li>
+  <li>self-right</li>
+  <li>self-top</li>
+  <li>self-middle (horizontally)</li>
+  <li>self-bottom</li>
+  <li>(breakpoint-)first</li>
+  <li>(last-)first</li>
+  <li>fill</li>
+  <li>auto</li>
+  <li>title</li>
+  <li>self-mx-auto</li>
+  <li>no-gutter</li>
+  <li>(last-)break</li>
+  </ul>
+<h4>Tags to put in a container that modify columns</h4>
+<ul>
+  <li>(breakpoint-)equal-number</li>
+  <li>grow (horizontally)</li>
+  <li>nogrow (horizontally)</li>
+  <li>stretch (vertically)</li>
+  <li>nostretch (vertically)</li>
+  <li>shrink (horizontally)</li>
+  <li>noshrink (horizontally)</li>
+  <li>left</li>
+  <li>center</li>
+  <li>right</li>
+  <li>space-around</li>
+  <li>space-between</li>
+  <li>top</li>
+  <li>middle (horizontally)</li>
+  <li>bottom</li>
+  <li>normal</li>
+  <li>content-stretch</li>
+  <li>content-middle</li>
+  <li>content-bottom</li>
+  <li>content-top</li>
+  <li>self-no-gutter</li>
+</ul>
+<p>Container attributes:</p>
+<ul>
+  <li>container</li>
+  <li>fluid, small, medium</li>
+  <li>size-number</li>
+  <li>breakpoint-size-number</li>
+  <br>
+  <li>row</li>
+  <li>nomax</li>
+  <li>fullheight</li>
+  <li>(breakpoint-)singleline</li>
+  <li>all-center</li>
+  <li>items-centralized</li>
+  <li>content-centralized</li>
+</ul>
+<p>Flexbox attributes:</p>
+<ul>
+<li>multiline</li>
+<li>equal</li>
+<li>size-number</li>
+<li>breakpoint-size-number</li>
+<li>equal-number</li>
+<li>breakpoint-equal-number</li>
+</ul>
+<p>other attributes</p>
+<ul>
+  <li>(breakpoint-)text-center</li>
+</ul>
