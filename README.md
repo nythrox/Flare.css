@@ -13,9 +13,6 @@ Flare can handle responsiveness automatically, but also gives you the option to 
 <h2>Light & Fast code, Faster workflows</h1>
 <p>Flare's main objective is to allow you build websites faster, with lighter code and without restricting you or making your website heavy. </p>
 <p>You set the size you wish the columns to be on desktop and flare will find a ideal size for them on other devices.</p>
-<h2>Manual Responsiveness (bootstrap-like)</h2>
-<p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
-<p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
 <h2>Combining both</h2>
 <p>You can choose a automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices exept tablets, where the column will take the size of eight.</p>
 <P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselvs. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
@@ -29,6 +26,9 @@ content inside of them.
 A column can have a size of one to sixteen, one being 6.25% of the
 container and sixteen being 100%.
 </p>
+<p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
+<p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
+<p>Alternatively, you can let flare handle responsiveness by defining the sizes of the columns without a breakpoint prefix (<code>column eight</code> instead of <code>column c-eight</code>). If you want to change the size on a certain breakpoint, you can add breakpoint tags and they will only count for them self. Example: <code>t-ten</code> will set the column to the size ten on tablet only, while flare chooses the size on other screens.</p>
 <p>Flexbox attributes:</p>
 <ul>
 <li>number</li>
