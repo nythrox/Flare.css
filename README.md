@@ -33,47 +33,10 @@ container and sixteen being 100%.
 <h4>Tags to put in a column</h4>
 <ul>
   <li>(breakpoint-)number</li>
-  <br>
-  <li>self-grow (horizontally)</li>
-  <li>self-nogrow (horizontally)</li>
-  <li>self-stretch (vertically)</li>
-  <li>self-nostretch (vertically)</li>
-  <li>self-shrink (horizontally)</li>
-  <li>self-noshrink (horizontally)</li>
-  <li>self-left</li>
-  <li>self-right</li>
-  <li>self-top</li>
-  <li>self-middle (horizontally)</li>
-  <li>self-bottom</li>
-  <li>fill</li>
-  <li>auto</li>
-  <li>title</li>
-  <li>self-mx-auto</li>
-  <li>no-gutter</li>
   </ul>
 <h4>Tags to put in a container that modify columns</h4>
 <ul>
   <li>(breakpoint-)equal-number</li>
-  <li>grow (horizontally)</li>
-  <li>nogrow (horizontally)</li>
-  <li>stretch (vertically)</li>
-  <li>nostretch (vertically)</li>
-  <li>shrink (horizontally)</li>
-  <li>noshrink (horizontally)</li>
-  <li>left</li>
-  <li>center</li>
-  <li>right</li>
-  <li>space-around</li>
-  <li>space-between</li>
-  <li>top</li>
-  <li>middle (horizontally)</li>
-  <li>bottom</li>
-  <li>normal</li>
-  <li>content-stretch</li>
-  <li>content-middle</li>
-  <li>content-bottom</li>
-  <li>content-top</li>
-  <li>self-no-gutter</li>
 </ul>
 <h1>Container</h1>
 <p>Containers are used to set items side by side.</p>
@@ -83,15 +46,9 @@ container and sixteen being 100%.
 <p>Block behavior: Collumns will have defined sizes that will not grow or shrink, and their content will fit inside them.</p>
 <p>Container attributes:</p>
 <ul>
-  <li>container</li>
+  <li>container / row / flexbox</li>
   <li>fluid, small, medium</li>
-  <li>size-number</li>
-  <li>breakpoint-size-number</li>
-  <br>
-  <li>row</li>
-  <li>nomax</li>
-  <li>fullheight</li>
-  <li>singleline</li>
+  <li>(breakpoint-)size-number</li>
 </ul>
 
 <h1>Flexbox</h1>
@@ -100,12 +57,11 @@ container and sixteen being 100%.
 <p>Flex behavior: Collumns will be sized according to their contents, and will always try to grow to fill 100% of the empty space. Columns are more flexible, they will never have an exactly specific width even if you add width attributes.</p>
 <p>Flexbox attributes:</p>
 <ul>
+<li>flexbox</li>
 <li>multiline</li>
 <li>equal</li>
-<li>size-number</li>
-<li>breakpoint-size-number</li>
-<li>equal-number</li>
-<li>breakpoint-equal-number</li>
+<li>(breakpoint-)size-number</li>
+<li>(breakpoint-)equal-number</li>
 </ul>
 <h1>Automatic Responsiveness</h1>
 <p>When giving a column a certain size <code>column eight</code> , you tell flare that you want it's size to be eight (half) at a computer screen, and flare will handle responsiveness on tablet and mobile.</p>
