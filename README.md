@@ -30,7 +30,7 @@ container and sixteen being 100%.
 <P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselves. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
 <p>Using the tag column is not obligatory, but it's ideal for easy CSS targeting</p>
 
-<p>Column attributes:</p>
+<h4>Tags to put in a column</h4>
 <ul>
   <li>(breakpoint-)number</li>
   <br>
@@ -49,7 +49,9 @@ container and sixteen being 100%.
   <li>auto</li>
   <li>title</li>
   <li>self-mx-auto</li>
+  <li>no-gutter</li>
   </ul>
+<h4>Tags to put in a container that modify columns</h4>
 <ul>
   <li>(breakpoint-)equal-number</li>
   <li>grow (horizontally)</li>
@@ -71,6 +73,7 @@ container and sixteen being 100%.
   <li>content-middle</li>
   <li>content-bottom</li>
   <li>content-top</li>
+  <li>self-no-gutter</li>
 </ul>
 <h1>Container</h1>
 <p>Containers are used to set items side by side.</p>
@@ -88,6 +91,7 @@ container and sixteen being 100%.
   <li>row</li>
   <li>nomax</li>
   <li>fullheight</li>
+  <li>singleline</li>
 </ul>
 
 <h1>Flexbox</h1>
