@@ -95,6 +95,29 @@ that way column can mean anything, or doesnt even need to have a div
 .content-bottom {align-items:flex-end!important}
 .content-top {align-content:flex-start!important}
 
+
+
+    
+.m-fill {
+	width:0%!important;
+	flex-grow:1!important;
+}
+.auto {
+	width:auto;
+	flex-grow:initial;
+}
+.stack-fill {
+	width:0%!important;
+	flex-grow:1!important;
+}
+.m-grow {
+	flex-grow:1!important;
+}
+.stack-grow {
+	flex-grow:1!important;
+}
+    
+
  /*@media(max-width:767px) phones and small tablets - small containers */
  
 .flexbox > *{
@@ -239,8 +262,23 @@ that way column can mean anything, or doesnt even need to have a div
 	.small {
     max-width:800px;
     }
-    
-    
+    	
+	
+ .t-fill {
+	width:0%!important;
+	flex-grow:1!important;
+}
+.stack-fill {
+	width:0%!important;
+	flex-grow:1!important;
+}
+
+.t-grow {
+	flex-grow:1!important;
+}
+.stack-grow {
+	flex-grow:1!important;
+}
     /*automatic responsiveness*/
     
 	 .size-one 										{width:12.5%} /*eight in a row instead of 16*/
@@ -361,6 +399,17 @@ that way column can mean anything, or doesnt even need to have a div
 .medium {
     max-width:800px;
 }
+/*other*/
+
+	
+.c-fill {
+	width:0%!important;
+	flex-grow:1!important;
+}
+.c-grow {
+	flex-grow:1!important;
+}
+
     /*---------------------------automatic responsivenes----------------*/
  
     .size-one 										{width:6.25%}

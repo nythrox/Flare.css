@@ -54,24 +54,6 @@ padding:0 0;
 	.m-offset-left-fifteen{margin-left:93.75%}
 	.m-offset-left-sixteen, .m-offset-left-full{margin-left:100%}
 	
- .m-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.auto {
-	width:auto;
-	flex-grow:initial;
-}
-.stack-auto, .stack-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.m-grow {
-	flex-grow:1!important;
-}
-.stack-grow {
-	flex-grow:1!important;
-}
    }
    @media(min-width:768px) {/*and (max-width:900px) big tablets have pc design*/
    /*todo all containers*/
@@ -111,26 +93,11 @@ padding:0 0;
 	.t-offset-left-eleven{margin-left:68.75%}
 	.t-offset-left-twelve{margin-left:75%}
 	.t-offset-left-thirteen{margin-left:81.25%}
-	.t-offset-left-fourteen{margin-left:87.5%}
+	.t-offset-left-fourteen{margin-left:87.5%}	
 	.t-offset-left-fifteen{margin-left:93.75%}
 	.t-offset-left-sixteen, .offset-left-full{margin-left:100%}
 	
-	
- .t-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.stack-auto, .stack-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
 
-.t-grow {
-	flex-grow:1!important;
-}
-.stack-grow {
-	flex-grow:1!important;
-}
    }
    @media(min-width:901px){/*computers*/
    /*---------------------------automatic responsivenes----------------*/
