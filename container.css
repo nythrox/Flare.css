@@ -38,6 +38,7 @@ that way column can mean anything, or doesnt even need to have a div
 .singleline {
     flex-wrap:nowrap;
 }
+.row {display:flex;} /*use row instead of container*/
 /*-----------container rules--------*/
     
 .container.fluid {
@@ -133,7 +134,6 @@ that way column can mean anything, or doesnt even need to have a div
     width:100%;
 }
 
-.row {display:flex;}
  .flexbox {flex-wrap:wrap;}
  
     .container {
@@ -647,18 +647,18 @@ that way column can mean anything, or doesnt even need to have a div
     }
 }
 
-.no-gutter {
+.self-no-gutter {
     padding-right:0px!important;  
     padding-left:0px!important;   
 }
-.no-gutters > * {
+.no-gutter > * {
     padding-right:0px!important;  
     padding-left:0px!important;   
 }
 
 .fluid {
     max-width:none;
-}   
+}  
 .container.fluid {
     max-width:none;
 }
