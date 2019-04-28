@@ -114,9 +114,7 @@ html {
 
 	
 /*centers, alignment, etc*/
-.container-center {
-	margin:auto;
-}
+
 .all-center {
 	display:flex;
 	flex-wrap:wrap;
