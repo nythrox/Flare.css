@@ -14,7 +14,7 @@ html {
 	}	
 /*container definitons and related, etc*/
 
-.line {
+.singleline {
 	flex-wrap:nowrap;
 }
 
@@ -52,7 +52,7 @@ html {
 		width:auto;
 		flex-basis: 100%;
 	}
-	.m-line {
+	.m-singleline {
 		flex-wrap:nowrap;
 	}
 }
@@ -87,7 +87,7 @@ html {
 		width:auto;
 		flex-basis: 100%;
 	}
-	.t-line {
+	.t-singleline {
 		flex-wrap:nowrap;
 	}
 }
@@ -107,7 +107,7 @@ html {
 	flex-basis: 100%;
 }
 
-.c-line {
+.c-singleline {
 	flex-wrap:nowrap;
 }
 }
