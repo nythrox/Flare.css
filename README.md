@@ -2,17 +2,17 @@
 Flare is a modern CSS library that allows you to create responsive layouts with less code.
 <h2>Automatic Responsiveness and Manual Responsiveness</h2>
 <p>
-Flare can handle responsiveness automatically, but also gives you the option to manually control it.
+Flare can handle responsiveness automatically but also gives you the option to manually control it.
 </p>
 <p>When creating a layout, you have the option to define all column sizes on breakpoints, to let Flare handle the sizes, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
 <h2>Block layout and Flex layout</h2>
 <p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs or even combine both.</p>
 <h2>More Containers, More sizes</h2>
-<p>Flare gives you many diffrent sized containers, you can choose between container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
+<p>Flare gives you many different sized containers, you can choose between container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
 
 <h2>Light & Fast code, Faster workflows</h1>
-<p>Flare's main objective is to allow you build websites faster, with lighter code and without restricting you or making your website heavy. </p>
-<p>You set the size you wish the columns to be on desktop and flare will find a ideal size for them on other devices.</p>
+<p>Flare's main objective is to allow you to build websites faster, with lighter code and without restricting you or making your website heavy. </p>
+<p>You set the size you wish the columns to be on desktop and flare will find an ideal size for them on other devices.</p>
 <h1>Column</h2>
 <p>
 Columns are the building blocks of flare. We give them sizes and add
@@ -26,16 +26,51 @@ container and sixteen being 100%.
 <p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
 <p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
 <p>Alternatively, you can let flare handle responsiveness by defining the sizes of the columns without a breakpoint prefix (<code>column eight</code> instead of <code>column c-eight</code>). If you want to change the size on a certain breakpoint, you can add breakpoint tags and they will only count for them self. Example: <code>t-ten</code> will set the column to the size ten on tablet only, while flare chooses the size on other screens.</p>
-<p>To combine automatic with manual responsiveness, you can choose a automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices exept tablets, where the column will take the size of eight.</p>
-<P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselvs. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
+<p>To combine automatic with manual responsiveness, you can choose automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices except tablets, where the column will take the size of eight.</p>
+<P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselves. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
+<p>Using the tag column is not obligatory, but it's ideal for easy CSS targeting</p>
 
-<p>Flexbox attributes:</p>
+<p>Column attributes:</p>
 <ul>
-<li>number</li>
-<li>breakpoint-number</li>
-<br>
-<li>equal-number</li>
-<li>breakpoint-equal-number</li>
+  <li>(breakpoint-)number</li>
+  <br>
+  <li>self-grow (horizontally)</li>
+  <li>self-nogrow (horizontally)</li>
+  <li>self-stretch (vertically)</li>
+  <li>self-nostretch (vertically)</li>
+  <li>self-shrink (horizontally)</li>
+  <li>self-noshrink (horizontally)</li>
+  <li>self-left</li>
+  <li>self-right</li>
+  <li>self-top</li>
+  <li>self-middle (horizontally)</li>
+  <li>self-bottom</li>
+  <li>fill</li>
+  <li>auto</li>
+  <li>title</li>
+  <li>self-mx-auto</li>
+  </ul>
+<ul>
+  <li>(breakpoint-)equal-number</li>
+  <li>grow (horizontally)</li>
+  <li>nogrow (horizontally)</li>
+  <li>stretch (vertically)</li>
+  <li>nostretch (vertically)</li>
+  <li>shrink (horizontally)</li>
+  <li>noshrink (horizontally)</li>
+  <li>left</li>
+  <li>center</li>
+  <li>right</li>
+  <li>space-around</li>
+  <li>space-between</li>
+  <li>top</li>
+  <li>middle (horizontally)</li>
+  <li>bottom</li>
+  <li>normal</li>
+  <li>content-stretch</li>
+  <li>content-middle</li>
+  <li>content-bottom</li>
+  <li>content-top</li>
 </ul>
 <h1>Container</h1>
 <p>Containers are used to set items side by side.</p>
@@ -45,11 +80,14 @@ container and sixteen being 100%.
 <p>Block behavior: Collumns will have defined sizes that will not grow or shrink, and their content will fit inside them.</p>
 <p>Container attributes:</p>
 <ul>
-  <li>container fluid</li>
   <li>container</li>
-  <li>small, medium</li>
+  <li>fluid, small, medium</li>
   <li>size-number</li>
   <li>breakpoint-size-number</li>
+  <br>
+  <li>row</li>
+  <li>nomax</li>
+  <li>fullheight</li>
 </ul>
 
 <h1>Flexbox</h1>
@@ -72,11 +110,6 @@ container and sixteen being 100%.
 <br>
 <p>Or if you dont want to use automatic responsiveness at all, you can build from mobile up using the breakpoint tags <code>column m&#8209;sixteen t&#8209;fourteen c&#8209;twelve</code> Without automatic responsiveness, each breakpoint tag counts for itself and up (Example: t&#8209;eight will make the column size eight for tablet, computer, television, etc)</p>
 <h1>How to Build, Guidelines, Best Practices</h1>
-<p>Without using automatic responsiveness (bootstrap-like), build from mobile-up.</p>
-<p>Using automatic responsiveness, build from the computer down if you need to change a size.</p>
-<br>
-<p>Wrap all your Main content in a container flex or a container</p>
-<p>using the tag column is optional, but its ideal for easy css targeting</p>
 <p></p>
 <h1>Attributes:</h1>
 <p>Column</p>
