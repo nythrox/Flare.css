@@ -12,6 +12,14 @@ Flare handle responsiveness automatically, but also gives you the option to manu
 <p>
 Automatic Responsiveness, Flexbox, different containers, being lightweight and short readable code are the main differencials that flare has from bootstrap, but they are all optional and do not restrict or limit how you program, or interfere with other frameworks..
 </p>
+<h2>Automatic Responsiveness</h2>
+<p>You set the size you wish the columns to be on desktop and flare will find a ideal size for them on other devices.</p>
+<h2>Manual Responsiveness (bootstrap-like)</h2>
+<p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
+<p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
+<h2>Combining both</h2>
+<p>You can choose a automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices exept tablets, where the column will take the size of eight.</p>
+<P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselvs. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
 <h1>Column</h2>
 <p>
 Columns are the building blocks of flare. We give them sizes and add
@@ -30,14 +38,6 @@ container and sixteen being 100%.
 <li>equal-number</li>
 <li>breakpoint-equal-number</li>
 </ul>
-<h1>Automatic Responsiveness</h1>
-<p>You set the size you wish the columns to be on desktop and flare will find a ideal size for them on other devices.</p>
-<h1>Manual Responsiveness (bootstrap-like)</h1>
-<p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
-<p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
-<h1>Combining both</h1>
-<p>You can choose a automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices exept tablets, where the column will take the size of eight.</p>
-<P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselvs. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
 <h1>Container</h1>
 <p>Containers are used to set items side by side.</p>
 <p>With a container, you can define the size of the container and the size of the columns inside of it (unless they get overwritten)</p>
