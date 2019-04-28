@@ -7,14 +7,7 @@
 padding:0 0;
 }
 	
- .fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.grow {
-	flex-grow:1!important;
-}
-
+    
 
 @media(min-width:0px){/*max-width:767pxfor phones and small tablets*/
 	/*---------------------------automatic responsivenes----------------*/
@@ -138,13 +131,6 @@ padding:0 0;
 	.c-offset-left-sixteen, .c-offset-left-full{margin-left:100%}
 	
 	
- .c-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.c-grow {
-	flex-grow:1!important;
-}
    }
    
    .offset-right-one{margin-right:6.25%}

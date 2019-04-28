@@ -77,7 +77,18 @@ that way column can mean anything, or doesnt even need to have a div
 .normal {align-items:flex-start!important;justify-content:flex-start!important;} 
 
 .left {justify-content: flex-start!important}
+.float-left, .self-left {
+    margin-right:auto;
+    margin-left:0;
+    order:-1;
+}
+
 .right {justify-content: flex-end!important}
+.float-right, .self-right {
+    margin-left:auto;
+    order:999;
+    margin-right:0;
+} 
 .center {justify-content: center!important}
 .between, .space-between {justify-content: space-between!important}
 .around, .space-around {justify-content: space-around!important}
@@ -96,27 +107,17 @@ that way column can mean anything, or doesnt even need to have a div
 .content-top {align-content:flex-start!important}
 
 
-
-    
-.m-fill {
+/**/
+.fill {/*size will be whateaver is left over*/
 	width:0%!important;
 	flex-grow:1!important;
 }
-.auto {
+.auto { /*size will depend on its content (flexbox default)*/
+    min-width:auto;
 	width:auto;
 	flex-grow:initial;
 }
-.stack-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.m-grow {
-	flex-grow:1!important;
-}
-.stack-grow {
-	flex-grow:1!important;
-}
-    
+ 
 
  /*@media(max-width:767px) phones and small tablets - small containers */
  
@@ -264,21 +265,6 @@ that way column can mean anything, or doesnt even need to have a div
     }
     	
 	
- .t-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.stack-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-
-.t-grow {
-	flex-grow:1!important;
-}
-.stack-grow {
-	flex-grow:1!important;
-}
     /*automatic responsiveness*/
     
 	 .size-one 										{width:12.5%} /*eight in a row instead of 16*/
@@ -400,15 +386,6 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:800px;
 }
 /*other*/
-
-	
-.c-fill {
-	width:0%!important;
-	flex-grow:1!important;
-}
-.c-grow {
-	flex-grow:1!important;
-}
 
     /*---------------------------automatic responsivenes----------------*/
  

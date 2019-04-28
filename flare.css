@@ -45,12 +45,7 @@ html {
 			order:999;
 		}
 	/*stackable, half and quarter for container, row and column*/
-	.m.stackable  > *{
-		width:100%;
-	}
-	.container.stackable > *{
-		width:100%;
-	}.m-break {
+	.m-break {
 		width:100%;
 	}
 	.flexbox > .m-break {
@@ -72,9 +67,6 @@ html {
 	.t-text-center{
 		text-align:center;
 	}
-	.t-stackable  > *{
-		width:100%;
-	}
 	
 	.stack-first, .first{
 		order:-1;
@@ -87,9 +79,6 @@ html {
 	}
 	.stack-last, .last{
 		order:999;
-	}
-	.stackable  > [class*="column"]{
-		width:100%;
 	}
 	.t-break {
 		width:100%;
@@ -105,17 +94,6 @@ html {
 
 @media(min-width:901px) {/**/
 
-	.float-right {
-		margin-left:auto;
-		order:999;
-		margin-right:0;
-	} 
-	
-	.float-left {
-		margin-right:auto;
-		margin-left:0;
-		order:-1;
-	} 
 
 	.c-text-center{
 		text-align:center;
