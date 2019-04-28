@@ -5,14 +5,14 @@ Flare is a modern CSS library that allows you to create responsive layouts with 
 Flare handle responsiveness automatically, but also gives you the option to manually control it.
 </p>
 <p>When creating a layout, you have the option to define all column sizes on breakpoints, to let Flare handle the sizes, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
-<h2>Lighter & Faster code, Faster solutions, Faster production, Faster workflow</h1>
-<p>The main objective of Flare is to let you build websites faster, without restricting your code or slowing your website.</p>
-<h2>More Containers</h2>
-<p>Flare gives you many diffrent sized containers, with container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
-<p>
-Automatic Responsiveness, Flexbox, different containers, being lightweight and short readable code are the main differencials that flare has from bootstrap, but they are all optional and do not restrict or limit how you program, or interfere with other frameworks..
-</p>
+<h2>Light & Fast code, Faster workflows</h1>
+<p>Flare's main objective is to allow you build websites faster, with lighter code and without restricting your code or making your website heavy.</p>
+<h2>Block layout and Flex layout</h2>
+<p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs or even combine both.</p>
 <h2>Automatic Responsiveness</h2>
+<h2>More Containers, More sizes</h2>
+<p>Flare gives you many diffrent sized containers, you can choose between container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
+
 <p>You set the size you wish the columns to be on desktop and flare will find a ideal size for them on other devices.</p>
 <h2>Manual Responsiveness (bootstrap-like)</h2>
 <p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
