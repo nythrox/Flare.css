@@ -9,7 +9,6 @@ Flare handle responsiveness automatically, but also gives you the option to manu
 <p>Flare's main objective is to allow you build websites faster, with lighter code and without restricting your code or making your website heavy.</p>
 <h2>Block layout and Flex layout</h2>
 <p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs or even combine both.</p>
-<h2>Automatic Responsiveness</h2>
 <h2>More Containers, More sizes</h2>
 <p>Flare gives you many diffrent sized containers, you can choose between container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
 
