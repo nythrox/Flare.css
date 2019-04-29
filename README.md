@@ -120,7 +120,7 @@ self-stretch | self-nostretch | stretch | nostretch
 self-shrink | self-noshrink | shrink | noshrink
 
 <h2>Horizontal Positioning</h2>
-* = has breakpoints
+* = has breakpoints (m- t- c- lg- xl- xxl-)
 <br>
 
 self | group
@@ -133,6 +133,7 @@ last* | ---
 --- | space-around
 --- | space-between
 --- | normal
+self-mx-auto | mx-auto
 
 <h2>Vertical Positioning</h2>
 
@@ -145,21 +146,27 @@ self-middle | middle
  | content-bottom
  | content-middle
  | content-stretch
-<ul>
-  <li>(breakpoint-)number</li>
-  <br>
-  <li>fill</li>
-  <li>auto</li>
-  <li>title</li>
-  <li>self-mx-auto</li>
-  <li>no-gutter</li>
-  <li>(last-)break</li>
-  </ul>
+ 
+<h2>Column Sizing</h2>
+
+tag | description
+------ | ------
+number* | column size on * breakpoint. number can be any value from one to sixteen
+fill | occupies all empty space
+auto | size according to its content
+title | always 100% width
+break* | breaks the line
+self-no-gutter | will have no gutter
+
 <h4>Tags to put in a container that modify columns</h4>
-<ul>
-  <li>(breakpoint-)equal-number</li>
-  <li>self-no-gutter</li>
-</ul>
+
+tag | description
+------ | ------
+equal-number* | number of columns on * breakpoint inside this row. number can be any value from one to twelve
+flexbox | columns inside thsi row will behave with flex behavior
+equal | columns inside this row will all have an equal width
+no-gutter | columns inside this row will have no gutter
+
 <p>Container attributes:</p>
 <ul>
   <li>container</li>
