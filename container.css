@@ -41,11 +41,9 @@ that way column can mean anything, or doesnt even need to have a div
 .row {display:flex;flex-wrap:wrap;margin:auto;} /*use row instead of container*/
 /*-----------container rules--------*/
     
-.container.fluid {
+.fluid {
     display:flex;
     flex-wrap:wrap;
-}
-.fluid {
     max-width:none;
     width:100%;
 }
@@ -764,8 +762,5 @@ that way column can mean anything, or doesnt even need to have a div
 }
 
 .fluid {
-    max-width:none;
-}  
-.container.fluid {
     max-width:none;
 }
