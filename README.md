@@ -65,7 +65,7 @@ container, *eight* being 50%, *sixteen* being 100% and so on.
 <p>To combine automatic with manual responsiveness, you can choose automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices except tablets, where the column will take the size of eight.</p>
 <P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselves. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
 <p>Using the tag <code>column</code> is not obligatory, but it's ideal for easy CSS targeting</p>
-<p>Main sizing tags for columns: number*, equal-number*, equal</p>
+<p>Main sizing tags for columns: number*, equal-number*, equal*</p>
 <p>Main alignment tags for columns: first*, last*, self-left, self-right, self-top, self-bottom, self-middle, stretch, grow, shrink</p>
 
 * = has breakpoints (m- t- c- lg- xl- xxl-), if using not using breakpoint then flare handles its responsiveness
@@ -92,7 +92,7 @@ container, *eight* being 50%, *sixteen* being 100% and so on.
 
 Container Sizes: container, fluid, small, medium, size-number*
 <br>
-Overwrite behavior tags: grow, stretch, shrink, singleline, multiline, size-number*, equal, equal-number*
+Overwrite behavior tags: grow, stretch, shrink, singleline, multiline, size-number*, equal*, equal-number*
 <br>
 * = has breakpoints (m- t- c- lg- xl- xxl-), if using not using breakpoint then flare handles its responsiveness
 
@@ -161,7 +161,7 @@ tag | description
 ------ | ------
 equal-number* | number of columns on * breakpoint inside this row. number can be any value from one to twelve
 flexbox | columns inside thsi row will behave with flex behavior
-equal | columns inside this row will all have an equal width
+equal* | columns inside this row will all have an equal width
 no-gutter | columns inside this row will have no gutter
 all-center | text-center, columns centered vertically and horizontaly
 items-centralized | columns centered vertically and horizontaly
