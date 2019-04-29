@@ -13,37 +13,34 @@ that way column can mean anything, or doesnt even need to have a div
     width:100%;
     display:flex;
 }
-.container:not(.flexbox) > *{
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    margin-right:auto;
+    margin-left:auto;
+    width:100%;
+} /*use row instead of container*/
+.row:not(.flexbox) > *{
     min-width: 0
     /*min-width: auto*/
 }
-.container {
-	width:100%;	
-	display:flex;
-    margin-right:auto;
-    margin-left:auto;
-    flex-wrap:wrap;
-}
-.container > * { /*used to be .container > .column*/
+.row > * { /*used to be .container > .column*/
     width:100%;
     flex-grow:0;
 }
-.container:not(.fluid){
+.row:not(.fluid){
     padding-right:25px;
     padding-left:25px;
 }
-.container .container {
+.row .row {
     padding:0;
 }
 .singleline {
     flex-wrap:nowrap;
 }
-.row {display:flex;flex-wrap:wrap;margin:auto;} /*use row instead of container*/
 /*-----------container rules--------*/
     
 .fluid {
-    display:flex;
-    flex-wrap:wrap;
     max-width:none;
     width:100%;
 }
@@ -705,49 +702,49 @@ that way column can mean anything, or doesnt even need to have a div
     
     }
 
-.container[class*=" size-"]{/*no max-width for those who are using container size-number instead of container small/container/medium*/
+[class*=" size-"]{/*no max-width for those who are using container size-number instead of container small/container/medium*/
     max-width:none;
 }
 .title {
     width:100%;
 }
 @media(max-width:768px) {
-    .container[class*="m-size-"]{
+    .container[class*="m-size-"],.small[class*="m-size-"],.medium[class*="m-size-"],.fluid[class*="m-size-"],[class*=" size-"][class*="m-size-"]{ 
+        /*when using based on premade container, only unlimit width on the breakpoint you chose.*/
+        /*if using with row, unlimit on the breakpoint and above*/
         max-width:none;
     }
     .flexbox.m-equal > *{
         width:100%;
     }
-    
 }
-
 @media(min-width:768px) and (max-width:900px){
-    .container[class*="t-size-"] {
+    .container[class*="t-size-"],.small[class*="t-size-"],.medium[class*="t-size-"],.fluid[class*="t-size-"],[class*=" size-"][class*="t-size-"]{ 
         max-width: none;
     }
 }
 
 @media(min-width:901px) and (max-width:1149px){
-    .container[class*="c-size-"]{
+    .container[class*="c-size-"],.small[class*="c-size-"],.medium[class*="c-size-"],.fluid[class*="c-size-"],[class*=" size-"][class*="c-size-"]{ 
         max-width:none;
     }
 }
 @media(min-width:1150px) and (max-width:1649px){
     
-    .container[class*="lg-size-"]{
+    .container[class*="lg-size-"],.small[class*="lg-size-"],.medium[class*="lg-size-"],.fluid[class*="lg-size-"],[class*=" size-"][class*="lg-size-"]{ 
         max-width:none;
     }
 }
 
 @media(min-width:1650px) and (max-width:2999px){
-    
-    .container[class*="xl-size-"]{
+    .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
+
         max-width:none;
     }
 }
 
 @media(min-width:3000px){
-    .container[class*="xxl-size-"]{
+    .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
         max-width:none;
     }
 }
