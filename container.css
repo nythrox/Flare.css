@@ -115,7 +115,7 @@ that way column can mean anything, or doesnt even need to have a div
 	width:auto;
 	flex-grow:initial;
 }
-.equal {
+.equal > * {
     width:0%;
     flex-grow:1;
 }
