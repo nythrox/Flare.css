@@ -236,23 +236,6 @@ html {
 .size-fifteen 								{width:100%}
 .size-sixteen, .size-full 					{width:100%}
 
-.m-size-one 										{width:6.25%}
-.m-size-two								 			{width:12.5%}
-.m-size-three 									{width:18.75%}	
-.m-size-four,  .m-size-quarter 	{width:25%}
-.m-size-five 										{width:31.25%}
-.m-size-six 										{width:37.5%}
-.m-size-seven 									{width:43.75%}
-.m-size-eight,  .m-size-half		 	{width:50%}
-.m-size-nine 										{width:56.25%}
-.m-size-ten 										{width:62.5%}
-.m-size-eleven 									{width:68.75%}
-.m-size-twelve 									{width:75%}
-.m-size-thirteen 								{width:81.25%}
-.m-size-fourteen 								{width:87.5%}
-.m-size-fifteen 								{width:93.75%}
-.m-size-sixteen, .m-size-full 					{width:100%}	
-
 .one{width:25%}
 .two{width:25%}
 .three{width:50%}
@@ -357,22 +340,6 @@ html {
 	 .size-fifteen 							    	{width:97.25%}
      .size-sixteen, .size-full 					    {width:100%}	
      
-    .t-size-one 										{width:6.25%}
-    .t-size-two								 			{width:12.5%}
-    .t-size-three 						    			{width:18.75%}	
-    .t-size-four,  .t-size-quarter 	                    {width:25%}
-    .t-size-five 										{width:31.25%}
-    .t-size-six 										{width:37.5%}
-    .t-size-seven 								    	{width:43.75%}
-    .t-size-eight,  .t-size-half		             	{width:50%}
-    .t-size-nine 										{width:56.25%}
-    .t-size-ten 										{width:62.5%}
-    .t-size-eleven 								    	{width:68.75%}
-    .t-size-twelve 									    {width:75%}
-    .t-size-thirteen 								    {width:81.25%}
-    .t-size-fourteen 							    	{width:87.5%}
-    .t-size-fifteen 							    	{width:93.75%}
-    .t-size-sixteen, .t-size-full 				    	{width:100%}	
 
 	.one{width:12.5%}
 	.two{width:20%}
@@ -517,22 +484,6 @@ html {
     .size-fifteen 								{width:93.75%}
     .size-sixteen, .size-full 					{width:100%}	
     
-    .c-size-one 										{width:6.25%}
-    .c-size-two								 			{width:12.5%}
-    .c-size-three 									{width:18.75%}	
-    .c-size-four,  .c-size-quarter 	{width:25%}
-    .c-size-five 										{width:31.25%}
-    .c-size-six 										{width:37.5%}
-    .c-size-seven 									{width:43.75%}
-    .c-size-eight,  .c-size-half		 	{width:50%}
-    .c-size-nine 										{width:56.25%}
-    .c-size-ten 										{width:62.5%}
-    .c-size-eleven 									{width:68.75%}
-    .c-size-twelve 									{width:75%}
-    .c-size-thirteen 								{width:81.25%}
-    .c-size-fourteen 								{width:87.5%}
-    .c-size-fifteen 								{width:93.75%}
-    .c-size-sixteen, .c-size-full 					{width:100%}	
     /*you can choose to use c-equal or just equal (on lg and up only)*/
     .equal-two > *        { width:50%; }
     .equal-three > *      { width:33.3333333%;}
@@ -615,23 +566,6 @@ html {
         width:100%;
         max-width:1040px;
     }
-    .lg-size-one 										{width:6.25%}
-    .lg-size-two								 			{width:12.5%}
-    .lg-size-three 									{width:18.75%}	
-    .lg-size-four,  .lg-size-quarter 	{width:25%}
-    .lg-size-five 										{width:31.25%}
-    .lg-size-six 										{width:37.5%}
-    .lg-size-seven 									{width:43.75%}
-    .lg-size-eight,  .lg-size-half		 	{width:50%}
-    .lg-size-nine 										{width:56.25%}
-    .lg-size-ten 										{width:62.5%}
-    .lg-size-eleven 									{width:68.75%}
-    .lg-size-twelve 									{width:75%}
-    .lg-size-thirteen 								{width:81.25%}
-    .lg-size-fourteen 								{width:87.5%}
-    .lg-size-fifteen 								{width:93.75%}
-    .lg-size-sixteen, .lg-size-full 					{width:100%}	
-    
     .lg-equal-one > *        { width:100%; }
     .lg-equal-two > *        { width:50%; }
     .lg-equal-three > *      {	width:33.3333333%;}
@@ -682,23 +616,7 @@ html {
         width:100%;
         max-width:1440px;
     }
-    .xl-size-one 										{width:6.25%}
-    .xl-size-two								 			{width:12.5%}
-    .xl-size-three 									{width:18.75%}	
-    .xl-size-four,  .xl-size-quarter 	{width:25%}
-    .xl-size-five 										{width:31.25%}
-    .xl-size-six 										{width:37.5%}
-    .xl-size-seven 									{width:43.75%}
-    .xl-size-eight,  .xl-size-half		 	{width:50%}
-    .xl-size-nine 										{width:56.25%}
-    .xl-size-ten 										{width:62.5%}
-    .xl-size-eleven 									{width:68.75%}
-    .xl-size-twelve 									{width:75%}
-    .xl-size-thirteen 								{width:81.25%}
-    .xl-size-fourteen 								{width:87.5%}
-    .xl-size-fifteen 								{width:93.75%}
-    .xl-size-sixteen, .xl-size-full 					{width:100%}	
- 
+
     .xl-equal-one > *        { width:100%; }
     .xl-equal-two > *        { width:50%; }
     .xl-equal-three > *      {	width:33.3333333%;}
@@ -745,23 +663,7 @@ html {
         width:100%;
         max-width:1440px;
     }
-    .xxl-size-one 										{width:6.25%}
-    .xxl-size-two								 			{width:12.5%}
-    .xxl-size-three 									{width:18.75%}	
-    .xxl-size-four,  .xxl-size-quarter 	{width:25%}
-    .xxl-size-five 										{width:31.25%}
-    .xxl-size-six 										{width:37.5%}
-    .xxl-size-seven 									{width:43.75%}
-    .xxl-size-eight,  .xxl-size-half		 	{width:50%}
-    .xxl-size-nine 										{width:56.25%}
-    .xxl-size-ten 										{width:62.5%}
-    .xxl-size-eleven 									{width:68.75%}
-    .xxl-size-twelve 									{width:75%}
-    .xxl-size-thirteen 								{width:81.25%}
-    .xxl-size-fourteen 								{width:87.5%}
-    .xxl-size-fifteen 								{width:93.75%}
-    .xxl-size-sixteen, .xxl-size-full 					{width:100%}	
- 
+    
     .xxl-equal-one > *        { width:100%; }
     .xxl-equal-two > *        { width:50%; }
     .xxl-equal-three > *      {	width:33.3333333%;}
@@ -919,6 +821,7 @@ html {
 }
 
 @media(min-width:901px) and (max-width:1149px){
+    
     .container[class*="c-size-"],.small[class*="c-size-"],.medium[class*="c-size-"],.fluid[class*="c-size-"],[class*=" size-"][class*="c-size-"]{ 
         max-width:none;
     }
