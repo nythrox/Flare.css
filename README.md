@@ -26,14 +26,24 @@ Flare can handle responsiveness automatically but also gives you the option to m
 <code>
 @media(max-width:768px) {
 }
+</code>
+<code>
 @media(min-width:768px) and (max-width:900px){
 }
+</code>
+<code>
 @media(min-width:901px) and (max-width:1149px){
 }
+</code>
+<code>
 @media(min-width:1150px) and (max-width:1649px){
 }
+</code>
+<code>
 @media(min-width:1650px) and (max-width:2999px){
 }
+</code>
+<code>
 @media(min-width:3000px){
 }
 </code>
@@ -100,22 +110,44 @@ container and sixteen being 100%.
 <p>Column</p>
 <p>container and flexbox</p>
 <h4>Tags to put in a column</h4>
+* = has breakpoints
+<br>
+
+self positive | self negative | group positive | group negative
+------------- | ------------- | ------------- | -------------
+self-grow | self-nogrow | grow | nogrow
+self-stretch | self-nostretch | stretch | nostretch
+self-shrink | self-noshrink | shrink | noshrink
+
+<h2>Horizontal Positioning</h2>
+* = has breakpoints
+<br>
+
+self | group
+------------- | -------------
+self-left | left
+self-right | right
+first* | ---
+last* | ---
+--- | center
+--- | space-around
+--- | space-between
+--- | normal
+
+<h2>Vertical Positioning</h2>
+
+self        | group
+--------    | -----
+self-top    | top
+self-bottom | bottom
+self-middle | middle
+ | content-top
+ | content-bottom
+ | content-middle
+ | content-stretch
 <ul>
   <li>(breakpoint-)number</li>
   <br>
-  <li>self-grow (horizontally)</li>
-  <li>self-nogrow (horizontally)</li>
-  <li>self-stretch (vertically)</li>
-  <li>self-nostretch (vertically)</li>
-  <li>self-shrink (horizontally)</li>
-  <li>self-noshrink (horizontally)</li>
-  <li>self-left</li>
-  <li>self-right</li>
-  <li>self-top</li>
-  <li>self-middle (horizontally)</li>
-  <li>self-bottom</li>
-  <li>(breakpoint-)first</li>
-  <li>(last-)first</li>
   <li>fill</li>
   <li>auto</li>
   <li>title</li>
@@ -126,25 +158,6 @@ container and sixteen being 100%.
 <h4>Tags to put in a container that modify columns</h4>
 <ul>
   <li>(breakpoint-)equal-number</li>
-  <li>grow (horizontally)</li>
-  <li>nogrow (horizontally)</li>
-  <li>stretch (vertically)</li>
-  <li>nostretch (vertically)</li>
-  <li>shrink (horizontally)</li>
-  <li>noshrink (horizontally)</li>
-  <li>left</li>
-  <li>center</li>
-  <li>right</li>
-  <li>space-around</li>
-  <li>space-between</li>
-  <li>top</li>
-  <li>middle (horizontally)</li>
-  <li>bottom</li>
-  <li>normal</li>
-  <li>content-stretch</li>
-  <li>content-middle</li>
-  <li>content-bottom</li>
-  <li>content-top</li>
   <li>self-no-gutter</li>
 </ul>
 <p>Container attributes:</p>
