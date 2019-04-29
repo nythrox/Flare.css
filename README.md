@@ -13,7 +13,12 @@ Flare can handle responsiveness automatically but also gives you the option to m
 <h2>Light & Fast code, Faster workflows</h1>
 <p>Flare's main objective is to allow you to build websites faster, with lighter code and without restricting you or making your website heavy. </p>
 <p>You set the size you wish the columns to be on desktop and flare will find an ideal size for them on other devices.</p>
-<h1>Column</h2>
+<h2>Breakpoints and Size options</h2>
+<p>the breakpoints are:</p>
+<ul>
+  <li></li>
+</ul>
+<h2>Column</h2>
 <p>
 Columns are the building blocks of flare. We give them sizes and add
 content inside of them.
@@ -36,7 +41,8 @@ container and sixteen being 100%.
   </ul>
 <h4>Tags to put in a container that modify columns</h4>
 <ul>
-  <li>(breakpoint-)equal-number</li>
+  <li>(breakpoint-)equal-number</li>  
+  <li>equal</li>
 </ul>
 <h1>Container</h1>
 <p>Containers are used to set items side by side.</p>
@@ -49,6 +55,7 @@ container and sixteen being 100%.
   <li>container / row / flexbox</li>
   <li>fluid, small, medium</li>
   <li>(breakpoint-)size-number</li>
+  <li>equal</li>
 </ul>
 
 <h1>Flexbox</h1>
