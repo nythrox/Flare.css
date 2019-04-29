@@ -143,15 +143,18 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:none;
 }
     .container {
+        width:100%;
         /* padding-right:8%;
         padding-left:8%; */
         max-width:540px;
     }
     
     .medium {
+        width:100%;
         max-width:570px;
     }
     .small {
+        width:100%;
         max-width:630px;
     }
 
@@ -262,6 +265,7 @@ that way column can mean anything, or doesnt even need to have a div
     width:100%;
 }
 .container {
+    width:100%;
         /* padding-right:2%;
         padding-left:2%; */
     max-width:670px;
@@ -269,9 +273,11 @@ that way column can mean anything, or doesnt even need to have a div
         
         
 .medium {
+    width:100%;
     max-width:600px;
 }
 	.small {
+        width:100%;
     max-width:800px;
     }
     	
@@ -391,12 +397,15 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:none;
 }
 .container {
+    width:100%;
     max-width:900px;
 }
 .small {
+    width:100%;
     max-width:760px;
 }
 .medium {
+    width:100%;
     max-width:800px;
 }
 /*other*/
@@ -507,12 +516,15 @@ that way column can mean anything, or doesnt even need to have a div
         max-width:none;
     }
     .container {
+        width:100%;
         max-width:1140px;
     }
     .small {
+        width:100%;
         max-width:900px;
     }
     .medium {
+        width:100%;
         max-width:1040px;
     }
     .lg-size-one 										{width:6.25%}
@@ -571,12 +583,15 @@ that way column can mean anything, or doesnt even need to have a div
         max-width:none;
     }
     .container {
+        width:100%;
         max-width:1540px;
     }
     .small {
+        width:100%;
         max-width:1300px;
     }
     .medium {
+        width:100%;
         max-width:1440px;
     }
     .xl-size-one 										{width:6.25%}
@@ -631,12 +646,15 @@ that way column can mean anything, or doesnt even need to have a div
         max-width:none;
     }
     .container {
+        width:100%;
         max-width:1540px;
     }
     .small {
+        width:100%;
         max-width:1300px;
     }
     .medium {
+        width:100%;
         max-width:1440px;
     }
     .xxl-size-one 										{width:6.25%}
