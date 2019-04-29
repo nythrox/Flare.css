@@ -1,4 +1,4 @@
-# Flare.css
+<h1> Flare.css</h1>
 Flare is a modern CSS library that allows you to create responsive layouts with less code.
 <h2>Automatic Responsiveness and Manual Responsiveness</h2>
 <p>
