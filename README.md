@@ -13,6 +13,9 @@ Flare can handle responsiveness automatically but also gives you the option to m
 <h2>Light & Fast code, Faster workflows</h1>
 <p>Flare's main objective is to allow you to build websites faster, with lighter code and without restricting you or making your website heavy. </p>
 <p>You set the size you wish the columns to be on desktop and flare will find an ideal size for them on other devices.</p>
+<br>
+
+<h1>Documentation</h1>
 <h2>Breakpoints and Size options</h2>
 <p>the breakpoints are:</p>
 <ul>
@@ -73,32 +76,30 @@ container and sixteen being 100%.
   <li>(breakpoint-)equal-number</li>  
   <li>equal</li>
 </ul>
-<h1>Container</h1>
-<p>Containers are used to set items side by side.</p>
-<p>With a container, you can define the size of the container and the size of the columns inside of it (unless they get overwritten)</p>
-<p>They can also be used to limit the total size of the content, centralizing it in the screen.</p>
-<p>Inside of containers, columns behave with a block behavior.</p>
-<p>Block behavior: Collumns will have defined sizes that will not grow or shrink, and their content will fit inside them.</p>
-<p>Container attributes:</p>
-<ul>
-  <li>container / row / flexbox</li>
-  <li>fluid, small, medium</li>
-  <li>(breakpoint-)size-number</li>
-  <li>equal</li>
-</ul>
+<h1>Row & Flexbox</h1>
+<p>Rows & Flexboxes are used to set items side by side.</p>
+<p>You can add a size to the row to limit the total size of the content, centralizing it in the screen.</p>
 
-<h1>Flexbox</h1>
-<p>Flexboxes are used to set items side by side.</p>
+<p>Inside of rows, columns behave with a block behavior.</p>
+<p>Block behavior: 
+  Collumns will have defined sizes that will not grow or shrink. <br>
+  Columns in a line have the same vertical size (stretch). <br>
+  Columns overflowing will jump to the next line.<br>
+</p>
+
 <p>Inside of flexbox, columns behave with a flex behavior.</p>
-<p>Flex behavior: Collumns will be sized according to their contents, and will always try to grow to fill 100% of the empty space. Columns are more flexible, they will never have an exactly specific width even if you add width attributes.</p>
-<p>Flexbox attributes:</p>
-<ul>
-<li>flexbox</li>
-<li>multiline</li>
-<li>equal</li>
-<li>(breakpoint-)size-number</li>
-<li>(breakpoint-)equal-number</li>
-</ul>
+<p>Flex behavior: Collumns are sized acording to the size of their content (width:auto). <br>
+  Columns in a line have the same vertical size (stretch). <br>
+  Columns will grow to fill all empty space. <br>
+  Columns will shrink to fit in one line.</p><br>
+<p>All default behaviors can be overwritten with tags (see column tags), and are only here to facilitate development</p>
+
+Container Sizes: container, fluid, small, medium, size-number*
+<br>
+Overwrite behavior tags: grow, stretch, shrink, singleline, multiline, size-number*, equal, equal-number*
+<br>
+* = has breakpoints (m- t- c- lg- xl- xxl-), if using not using breakpoint then flare handles its responsiveness
+
 <h1>Automatic Responsiveness</h1>
 <p>When giving a column a certain size <code>column eight</code> , you tell flare that you want it's size to be eight (half) at a computer screen, and flare will handle responsiveness on tablet and mobile.</p>
 <br>
@@ -110,7 +111,7 @@ container and sixteen being 100%.
 <p>Column</p>
 <p>container and flexbox</p>
 <h4>Tags to put in a column</h4>
-* = has breakpoints
+* = has breakpoints (m- t- c- lg- xl- xxl-)
 <br>
 
 self positive | self negative | group positive | group negative
@@ -166,35 +167,24 @@ equal-number* | number of columns on * breakpoint inside this row. number can be
 flexbox | columns inside thsi row will behave with flex behavior
 equal | columns inside this row will all have an equal width
 no-gutter | columns inside this row will have no gutter
+all-center | text-center, columns centered vertically and horizontaly
+items-centralized | columns centered vertically and horizontaly
+content-centralized | content centered vertically and horizontaly
 
-<p>Container attributes:</p>
-<ul>
-  <li>container</li>
-  <li>fluid, small, medium</li>
-  <li>size-number</li>
-  <li>breakpoint-size-number</li>
-  <br>
-  <li>row</li>
-  <li>nomax</li>
-  <li>fullheight</li>
-  <li>(breakpoint-)singleline</li>
-  <li>all-center</li>
-  <li>items-centralized</li>
-  <li>content-centralized</li>
-</ul>
-<p>Flexbox attributes:</p>
-<ul>
-<li>multiline</li>
-<li>equal</li>
-<li>size-number</li>
-<li>breakpoint-size-number</li>
-<li>equal-number</li>
-<li>breakpoint-equal-number</li>
-</ul>
-<p>other attributes</p>
-<ul>
-  <li>(breakpoint-)text-center</li>
-</ul>
+<p>Row and Flexbox attributes:</p>
+
+tag | description
+------ | ------
+row | columns inside this row will have default block behavior
+flexbox | columns inside this flexbox will have default flex behavior
+container, fluid, small, medium | different sized containers
+size-number* | defines the size of the container. number can be any value from one to sixteen
+singleline* | on * breakpoint, row will be a single line
+multiline* | flexbox can have multiple lines
+fullheight | will have a 100vh height
+nomax | will have no max width 
+text-center* | on * brekapoint text will be centralized 
+
 <h1>Browser Support</h1>
 <ul>
   <li>Last 2 Versions FF, Chrome, Safari Mac</li>
