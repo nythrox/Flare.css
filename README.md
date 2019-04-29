@@ -156,3 +156,9 @@ container and sixteen being 100%.
 <ul>
   <li>(breakpoint-)text-center</li>
 </ul>
+<h1>Browser Support</h1>
+Last 2 Versions FF, Chrome, Safari Mac
+IE 11+
+Android 4.4+, Chrome for Android 44+
+iOS Safari 7+
+Microsoft Edge 12+
