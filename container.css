@@ -38,7 +38,7 @@ that way column can mean anything, or doesnt even need to have a div
 .singleline {
     flex-wrap:nowrap;
 }
-.row {display:flex;} /*use row instead of container*/
+.row {display:flex;flex-wrap:wrap;margin:auto;} /*use row instead of container*/
 /*-----------container rules--------*/
     
 .container.fluid {
@@ -139,6 +139,9 @@ that way column can mean anything, or doesnt even need to have a div
 
  .flexbox {flex-wrap:wrap;}
  
+ [class*="m-size-"]{
+    max-width:none;
+}
     .container {
         /* padding-right:8%;
         padding-left:8%; */
@@ -251,6 +254,9 @@ that way column can mean anything, or doesnt even need to have a div
 
 @media(min-width:768px){/*bigger tablets will have a computer-like layout. smaller ones will count as phones*/
 /*lots of container space so items can be side by side*/
+[class*="t-size-"]{
+    max-width:none;
+}
 
 .flexbox.t-equal > *{
     width:100%;
@@ -269,7 +275,7 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:800px;
     }
     	
-	
+
     /*automatic responsiveness*/
     
 	 .size-one 										{width:12.5%} /*eight in a row instead of 16*/
@@ -381,6 +387,9 @@ that way column can mean anything, or doesnt even need to have a div
         width:100%;
     }
 /*-----------------container types-------------*/
+[class*="c-size-"]{
+    max-width:none;
+}
 .container {
     max-width:900px;
 }
@@ -494,6 +503,9 @@ that way column can mean anything, or doesnt even need to have a div
 
 @media(min-width:1150px) { /*normal sized notebooks*/
     
+    [class*="lg-size-"]{
+        max-width:none;
+    }
     .container {
         max-width:1140px;
     }
@@ -503,62 +515,61 @@ that way column can mean anything, or doesnt even need to have a div
     .medium {
         max-width:1040px;
     }
+    .lg-size-one 										{width:6.25%}
+    .lg-size-two								 			{width:12.5%}
+    .lg-size-three 									{width:18.75%}	
+    .lg-size-four,  .lg-size-quarter 	{width:25%}
+    .lg-size-five 										{width:31.25%}
+    .lg-size-six 										{width:37.5%}
+    .lg-size-seven 									{width:43.75%}
+    .lg-size-eight,  .lg-size-half		 	{width:50%}
+    .lg-size-nine 										{width:56.25%}
+    .lg-size-ten 										{width:62.5%}
+    .lg-size-eleven 									{width:68.75%}
+    .lg-size-twelve 									{width:75%}
+    .lg-size-thirteen 								{width:81.25%}
+    .lg-size-fourteen 								{width:87.5%}
+    .lg-size-fifteen 								{width:93.75%}
+    .lg-size-sixteen, .lg-size-full 					{width:100%}	
     
-.container[class*="g-size-"]{
-    max-width:none;
-}
-    .g-size-one 										{width:6.25%}
-    .g-size-two								 			{width:12.5%}
-    .g-size-three 									{width:18.75%}	
-    .g-size-four,  .g-size-quarter 	{width:25%}
-    .g-size-five 										{width:31.25%}
-    .g-size-six 										{width:37.5%}
-    .g-size-seven 									{width:43.75%}
-    .g-size-eight,  .g-size-half		 	{width:50%}
-    .g-size-nine 										{width:56.25%}
-    .g-size-ten 										{width:62.5%}
-    .g-size-eleven 									{width:68.75%}
-    .g-size-twelve 									{width:75%}
-    .g-size-thirteen 								{width:81.25%}
-    .g-size-fourteen 								{width:87.5%}
-    .g-size-fifteen 								{width:93.75%}
-    .g-size-sixteen, .g-size-full 					{width:100%}	
+    .lg-equal-one > *        { width:100%; }
+    .lg-equal-two > *        { width:50%; }
+    .lg-equal-three > *      {	width:33.3333333%;}
+    .lg-equal-four > *       { width:25%;}
+    .lg-equal-five > *       {width:20%;} 
+    .lg-equal-six > *        {width:16.6666667%;}
+    .lg-equal-seven > *      {width:14.2%;}
+    .lg-equal-eight > *      {width:12.5%;}
+    .lg-equal-nine > *       {width:11.111111111%;}
+    .lg-equal-ten > *        {width:10%;}
+    .lg-equal-eleven > *     {width:9.09090909%;}
+    .lg-equal-twelve > *     {width:8.3333333%;}
     
-    .g-equal-one > *        { width:100%; }
-    .g-equal-two > *        { width:50%; }
-    .g-equal-three > *      {	width:33.3333333%;}
-    .g-equal-four > *       { width:25%;}
-    .g-equal-five > *       {width:20%;} 
-    .g-equal-six > *        {width:16.6666667%;}
-    .g-equal-seven > *      {width:14.2%;}
-    .g-equal-eight > *      {width:12.5%;}
-    .g-equal-nine > *       {width:11.111111111%;}
-    .g-equal-ten > *        {width:10%;}
-    .g-equal-eleven > *     {width:9.09090909%;}
-    .g-equal-twelve > *     {width:8.3333333%;}
-    
-	.g-one{width:6.25%}
-	.g-two{width:12.50%}
-	.g-three{width:18.75%}
-	.g-four, .g-quarter{width:25%}
-	.g-five{width:31.25%}
-	.g-six{width:37.5%}
-	.g-seven{width:43.75%}
-	.g-eight, .g-half{width:50%}
-	.g-nine{width:56.25%}
-	.g-ten{width:62.5%}
-	.g-eleven{width:68.75%}
-	.g-twelve{width:75%}
-	.g-thirteen{width:81.25%}
-	.g-fourteen{width:87.5%}
-	.g-fifteen{width:93.75%}
-	.g-sixteen, .g-full{width:100%}
+	.lg-one{width:6.25%}
+	.lg-two{width:12.50%}
+	.lg-three{width:18.75%}
+	.lg-four, .lg-quarter{width:25%}
+	.lg-five{width:31.25%}
+	.lg-six{width:37.5%}
+	.lg-seven{width:43.75%}
+	.lg-eight, .lg-half{width:50%}
+	.lg-nine{width:56.25%}
+	.lg-ten{width:62.5%}
+	.lg-eleven{width:68.75%}
+	.lg-twelve{width:75%}
+	.lg-thirteen{width:81.25%}
+	.lg-fourteen{width:87.5%}
+	.lg-fifteen{width:93.75%}
+	.lg-sixteen, .lg-full{width:100%}
      
     }
 
     
 @media(min-width:1650px) { /*computers*/
     
+    [class*="xl-size-"]{
+        max-width:none;
+    }
     .container {
         max-width:1540px;
     }
@@ -568,8 +579,57 @@ that way column can mean anything, or doesnt even need to have a div
     .medium {
         max-width:1440px;
     }
+    .xl-size-one 										{width:6.25%}
+    .xl-size-two								 			{width:12.5%}
+    .xl-size-three 									{width:18.75%}	
+    .xl-size-four,  .xl-size-quarter 	{width:25%}
+    .xl-size-five 										{width:31.25%}
+    .xl-size-six 										{width:37.5%}
+    .xl-size-seven 									{width:43.75%}
+    .xl-size-eight,  .xl-size-half		 	{width:50%}
+    .xl-size-nine 										{width:56.25%}
+    .xl-size-ten 										{width:62.5%}
+    .xl-size-eleven 									{width:68.75%}
+    .xl-size-twelve 									{width:75%}
+    .xl-size-thirteen 								{width:81.25%}
+    .xl-size-fourteen 								{width:87.5%}
+    .xl-size-fifteen 								{width:93.75%}
+    .xl-size-sixteen, .xl-size-full 					{width:100%}	
+ 
+    .xl-equal-one > *        { width:100%; }
+    .xl-equal-two > *        { width:50%; }
+    .xl-equal-three > *      {	width:33.3333333%;}
+    .xl-equal-four > *       { width:25%;}
+    .xl-equal-five > *       {width:20%;} 
+    .xl-equal-six > *        {width:16.6666667%;}
+    .xl-equal-seven > *      {width:14.2%;}
+    .xl-equal-eight > *      {width:12.5%;}
+    .xl-equal-nine > *       {width:11.111111111%;}
+    .xl-equal-ten > *        {width:10%;}
+    .xl-equal-eleven > *     {width:9.09090909%;}
+    .xl-equal-twelve > *     {width:8.3333333%;}
+    
+	.xl-one{width:6.25%}
+	.xl-two{width:12.50%}
+	.xl-three{width:18.75%}
+	.xl-four, .xl-quarter{width:25%}
+	.xl-five{width:31.25%}
+	.xl-six{width:37.5%}
+	.xl-seven{width:43.75%}
+	.xl-eight, .xl-half{width:50%}
+	.xl-nine{width:56.25%}
+	.xl-ten{width:62.5%}
+	.xl-eleven{width:68.75%}
+	.xl-twelve{width:75%}
+	.xl-thirteen{width:81.25%}
+	.xl-fourteen{width:87.5%}
+	.xl-fifteen{width:93.75%}
+	.xl-sixteen, .xl-full{width:100%}   
 }
 @media(min-width:3000px) {
+    [class*="xxl-size-"]{
+        max-width:none;
+    }
     .container {
         max-width:1540px;
     }
@@ -579,52 +639,52 @@ that way column can mean anything, or doesnt even need to have a div
     .medium {
         max-width:1440px;
     }
-    .g-size-one 										{width:6.25%}
-    .gg-size-two								 			{width:12.5%}
-    .gg-size-three 									{width:18.75%}	
-    .gg-size-four,  .gg-size-quarter 	{width:25%}
-    .gg-size-five 										{width:31.25%}
-    .gg-size-six 										{width:37.5%}
-    .gg-size-seven 									{width:43.75%}
-    .gg-size-eight,  .gg-size-half		 	{width:50%}
-    .gg-size-nine 										{width:56.25%}
-    .gg-size-ten 										{width:62.5%}
-    .gg-size-eleven 									{width:68.75%}
-    .gg-size-twelve 									{width:75%}
-    .gg-size-thirteen 								{width:81.25%}
-    .gg-size-fourteen 								{width:87.5%}
-    .gg-size-fifteen 								{width:93.75%}
-    .gg-size-sixteen, .gg-size-full 					{width:100%}	
+    .xxl-size-one 										{width:6.25%}
+    .xxl-size-two								 			{width:12.5%}
+    .xxl-size-three 									{width:18.75%}	
+    .xxl-size-four,  .xxl-size-quarter 	{width:25%}
+    .xxl-size-five 										{width:31.25%}
+    .xxl-size-six 										{width:37.5%}
+    .xxl-size-seven 									{width:43.75%}
+    .xxl-size-eight,  .xxl-size-half		 	{width:50%}
+    .xxl-size-nine 										{width:56.25%}
+    .xxl-size-ten 										{width:62.5%}
+    .xxl-size-eleven 									{width:68.75%}
+    .xxl-size-twelve 									{width:75%}
+    .xxl-size-thirteen 								{width:81.25%}
+    .xxl-size-fourteen 								{width:87.5%}
+    .xxl-size-fifteen 								{width:93.75%}
+    .xxl-size-sixteen, .xxl-size-full 					{width:100%}	
  
-    .gg-equal-one > *        { width:100%; }
-    .gg-equal-two > *        { width:50%; }
-    .gg-equal-three > *      {	width:33.3333333%;}
-    .gg-equal-four > *       { width:25%;}
-    .gg-equal-five > *       {width:20%;} 
-    .gg-equal-six > *        {width:16.6666667%;}
-    .gg-equal-seven > *      {width:14.2%;}
-    .gg-equal-eight > *      {width:12.5%;}
-    .gg-equal-nine > *       {width:11.111111111%;}
-    .gg-equal-ten > *        {width:10%;}
-    .gg-equal-eleven > *     {width:9.09090909%;}
-    .gg-equal-twelve > *     {width:8.3333333%;}
+    .xxl-equal-one > *        { width:100%; }
+    .xxl-equal-two > *        { width:50%; }
+    .xxl-equal-three > *      {	width:33.3333333%;}
+    .xxl-equal-four > *       { width:25%;}
+    .xxl-equal-five > *       {width:20%;} 
+    .xxl-equal-six > *        {width:16.6666667%;}
+    .xxl-equal-seven > *      {width:14.2%;}
+    .xxl-equal-eight > *      {width:12.5%;}
+    .xxl-equal-nine > *       {width:11.111111111%;}
+    .xxl-equal-ten > *        {width:10%;}
+    .xxl-equal-eleven > *     {width:9.09090909%;}
+    .xxl-equal-twelve > *     {width:8.3333333%;}
     
-	.gg-one{width:6.25%}
-	.gg-two{width:12.50%}
-	.gg-three{width:18.75%}
-	.gg-four, .gg-quarter{width:25%}
-	.gg-five{width:31.25%}
-	.gg-six{width:37.5%}
-	.gg-seven{width:43.75%}
-	.gg-eight, .gg-half{width:50%}
-	.gg-nine{width:56.25%}
-	.gg-ten{width:62.5%}
-	.gg-eleven{width:68.75%}
-	.gg-twelve{width:75%}
-	.gg-thirteen{width:81.25%}
-	.gg-fourteen{width:87.5%}
-	.gg-fifteen{width:93.75%}
-	.gg-sixteen, .gg-full{width:100%}
+	.xxl-one{width:6.25%}
+	.xxl-two{width:12.50%}
+	.xxl-three{width:18.75%}
+	.xxl-four, .xxl-quarter{width:25%}
+	.xxl-five{width:31.25%}
+	.xxl-six{width:37.5%}
+	.xxl-seven{width:43.75%}
+	.xxl-eight, .xxl-half{width:50%}
+	.xxl-nine{width:56.25%}
+	.xxl-ten{width:62.5%}
+	.xxl-eleven{width:68.75%}
+	.xxl-twelve{width:75%}
+	.xxl-thirteen{width:81.25%}
+	.xxl-fourteen{width:87.5%}
+	.xxl-fifteen{width:93.75%}
+	.xxl-sixteen, .xxl-full{width:100%}
      
     
     }
@@ -632,7 +692,7 @@ that way column can mean anything, or doesnt even need to have a div
 .container[class*=" size-"]{/*no max-width for those who are using container size-number instead of container small/container/medium*/
     max-width:none;
 }
-.container > .title {
+.title {
     width:100%;
 }
 @media(max-width:768px) {
@@ -644,8 +704,34 @@ that way column can mean anything, or doesnt even need to have a div
     }
     
 }
+
 @media(min-width:768px) and (max-width:900px){
-    .container[class*="t-size-"]{
+    .container[class*="t-size-"] {
+        max-width: none;
+    }
+}
+
+@media(min-width:901px) and (max-width:1149px){
+    .container[class*="c-size-"]{
+        max-width:none;
+    }
+}
+@media(min-width:1150px) and (max-width:1649px){
+    
+    .container[class*="lg-size-"]{
+        max-width:none;
+    }
+}
+
+@media(min-width:1650px) and (max-width:2999px){
+    
+    .container[class*="xl-size-"]{
+        max-width:none;
+    }
+}
+
+@media(min-width:3000px){
+    .container[class*="xxl-size-"]{
         max-width:none;
     }
 }
