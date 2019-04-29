@@ -16,8 +16,27 @@ Flare can handle responsiveness automatically but also gives you the option to m
 <h2>Breakpoints and Size options</h2>
 <p>the breakpoints are:</p>
 <ul>
-  <li></li>
+  <li>m (mobile)</li>
+  <li>t (tablet)</li>
+  <li>c (computer)</li>
+  <li>lg</li>
+  <li>xl</li>
+  <li>xxl</li>
 </ul>
+<code>
+@media(max-width:768px) {
+}
+@media(min-width:768px) and (max-width:900px){
+}
+@media(min-width:901px) and (max-width:1149px){
+}
+@media(min-width:1150px) and (max-width:1649px){
+}
+@media(min-width:1650px) and (max-width:2999px){
+}
+@media(min-width:3000px){
+}
+</code>
 <h2>Column</h2>
 <p>
 Columns are the building blocks of flare. We give them sizes and add
@@ -157,8 +176,10 @@ container and sixteen being 100%.
   <li>(breakpoint-)text-center</li>
 </ul>
 <h1>Browser Support</h1>
-Last 2 Versions FF, Chrome, Safari Mac
-IE 11+
-Android 4.4+, Chrome for Android 44+
-iOS Safari 7+
-Microsoft Edge 12+
+<ul>
+  <li>Last 2 Versions FF, Chrome, Safari Mac</li>
+<li>IE 11+</li>
+<li>Android 4.4+, Chrome for Android 44+</li>
+<li>iOS Safari 7+</li>
+<li>Microsoft Edge 12+</li>
+</ul>
