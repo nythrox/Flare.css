@@ -115,8 +115,15 @@ that way column can mean anything, or doesnt even need to have a div
 	width:auto;
 	flex-grow:initial;
 }
- 
+.equal {
+    width:0%;
+    flex-grow:1;
+}
 
+.m-equal > *{
+    width:0%;
+    flex-grow:1;
+}
  /*@media(max-width:767px) phones and small tablets - small containers */
  
 .flexbox > *{
@@ -128,7 +135,7 @@ that way column can mean anything, or doesnt even need to have a div
 .flexbox[class*="equal-"]{
     flex-wrap:wrap;
 }
-.flexbox.equal > *{
+.equal > *{
     width:100%;
 }
 
@@ -256,7 +263,7 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:none;
 }
 
-.flexbox.t-equal > *{
+.t-equal > *{
     width:100%;
 }
 .container {
@@ -380,11 +387,11 @@ that way column can mean anything, or doesnt even need to have a div
     .flexbox {
         flex-wrap:nowrap;
     }
-    .flexbox.equal > *{
+    .equal > *{
         width:0%;
         flex-grow:1;
     }
-    .flexbox.c-equal > *{
+    .c-equal > *{
         width:100%;
     }
 /*-----------------container types-------------*/
@@ -702,7 +709,7 @@ that way column can mean anything, or doesnt even need to have a div
     
     }
 
-[class*=" size-"]{/*no max-width for those who are using container size-number instead of container small/container/medium*/
+[class*=" size-"]/*:not(.maxwidth)*/{/*no max-width for those who are using container size-number instead of container small/container/medium*/
     max-width:none;
 }
 .title {
@@ -713,9 +720,6 @@ that way column can mean anything, or doesnt even need to have a div
         /*when using based on premade container, only unlimit width on the breakpoint you chose.*/
         /*if using with row, unlimit on the breakpoint and above*/
         max-width:none;
-    }
-    .flexbox.m-equal > *{
-        width:100%;
     }
 }
 @media(min-width:768px) and (max-width:900px){
