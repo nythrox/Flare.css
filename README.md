@@ -52,46 +52,42 @@ Flare can handle responsiveness automatically but also gives you the option to m
 </code>
 <h2>Column</h2>
 <p>
-Columns are the building blocks of flare. We give them sizes and add
-content inside of them.
+Columns are the building blocks of flare. We can give them sizes and add
+content inside of them. Their default behavior depends if they are in a row or a flexbox.
 </p>
-<P>Flare can have up to 16 columns in each row.</P>
 <p>
-A column can have a size of one to sixteen, one being 6.25% of the
-container and sixteen being 100%.
+A column can have a size of one to sixteen, *one* being 6.25% of the
+container, *eight* being 50%, *sixteen* being 100% and so on.
 </p>
 <p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). </p>
 <p>For each breakpoint you choose, the size you set counts for itself and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets, computers and up.</p>
 <p>Alternatively, you can let flare handle responsiveness by defining the sizes of the columns without a breakpoint prefix (<code>column eight</code> instead of <code>column c-eight</code>). If you want to change the size on a certain breakpoint, you can add breakpoint tags and they will only count for them self. Example: <code>t-ten</code> will set the column to the size ten on tablet only, while flare chooses the size on other screens.</p>
 <p>To combine automatic with manual responsiveness, you can choose automatic responsiveness and then overwrite it on specific breakpoints. Example: <code>column eight t-eight</code> means that flare will handle responsiveness on all devices except tablets, where the column will take the size of eight.</p>
 <P>When using breakpoints in combination with automatic responsiveness, breakpoints no longer count for themselves and up, they count only for themselves. Example: <code>column twelve t-sixteen</code> instead of t-sixteen counting for tablet and up, it will only give the column size 16 at tablet.</P>
-<p>Using the tag column is not obligatory, but it's ideal for easy CSS targeting</p>
+<p>Using the tag <code>column</code> is not obligatory, but it's ideal for easy CSS targeting</p>
+<p>Main sizing tags for columns: number*, equal-number*, equal</p>
+<p>Main alignment tags for columns: first*, last*, self-left, self-right, self-top, self-bottom, self-middle, stretch, grow, shrink</p>
 
-<h4>Tags to put in a column</h4>
-<ul>
-  <li>(breakpoint-)number</li>
-  </ul>
-<h4>Tags to put in a container that modify columns</h4>
-<ul>
-  <li>(breakpoint-)equal-number</li>  
-  <li>equal</li>
-</ul>
+* = has breakpoints (m- t- c- lg- xl- xxl-), if using not using breakpoint then flare handles its responsiveness
+
 <h1>Row & Flexbox</h1>
 <p>Rows & Flexboxes are used to set items side by side.</p>
 <p>You can add a size to the row to limit the total size of the content, centralizing it in the screen.</p>
 
 <p>Inside of rows, columns behave with a block behavior.</p>
-<p>Block behavior: 
+<p>Inside of flexbox, columns behave with a flex behavior.</p>
+<h4>Block behavior: </h4>
   Collumns will have defined sizes that will not grow or shrink. <br>
   Columns in a line have the same vertical size (stretch). <br>
   Columns overflowing will jump to the next line.<br>
-</p>
 
-<p>Inside of flexbox, columns behave with a flex behavior.</p>
-<p>Flex behavior: Collumns are sized acording to the size of their content (width:auto). <br>
+
+<h4>Flex behavior: </h4>
+  Collumns are sized acording to the size of their content (width:auto). <br>
   Columns in a line have the same vertical size (stretch). <br>
   Columns will grow to fill all empty space. <br>
   Columns will shrink to fit in one line.</p><br>
+  
 <p>All default behaviors can be overwritten with tags (see column tags), and are only here to facilitate development</p>
 
 Container Sizes: container, fluid, small, medium, size-number*
