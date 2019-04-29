@@ -1,51 +1,8 @@
 /*column.one {width:calc(25% - $spaced);}*/
 
-.column, .container .column {
-	padding: 0 16px;
-}
-.column.nogutter {
-padding:0 0;
-}
-	
-    
-
 @media(min-width:0px){/*max-width:767pxfor phones and small tablets*/
 	/*---------------------------automatic responsivenes----------------*/
 
-	
-	.m-offset-right-one{margin-right:6.25%}
-	.m-offset-right-two{margin-right:12.5%}
-	.m-offset-right-three{margin-right:18.75%}
-	.m-offset-right-four, .m-offset-right-quarter{margin-right:25%}
-	.m-offset-right-five{margin-right:31.25%}
-	.m-offset-right-six{margin-right:37.5%}
-	.m-offset-right-seven{margin-right:43.75%}
-	.m-offset-right-eight, .m-offset-right-half{margin-right:50%}
-	.m-offset-right-nine{margin-right:56.25%}
-	.m-offset-right-ten{margin-right:62.5%}
-	.m-offset-right-eleven{margin-right:68.75%}
-	.m-offset-right-twelve{margin-right:75%}
-	.m-offset-right-thirteen{margin-right:81.25%}
-	.m-offset-right-fourteen{margin-right:87.5%}
-	.m-offset-right-fifteen{margin-right:93.75%}
-	.m-offset-right-sixteen, .m-offset-right-full{margin-right:100%}
- 
-	.m-offset-left-one{margin-left:6.25%}
-	.m-offset-left-two{margin-left:12.5%}
-	.m-offset-left-three{margin-left:18.75%}
-	.m-offset-left-four, .m-offset-left-quarter{margin-left:25%}
-	.m-offset-left-five{margin-left:31.25%}
-	.m-offset-left-six{margin-left:37.5%}
-	.m-offset-left-seven{margin-left:43.75%}
-	.m-offset-left-eight, .m-offset-left-half{margin-left:50%}
-	.m-offset-left-nine{margin-left:56.25%}
-	.m-offset-left-ten{margin-left:62.5%}
-	.m-offset-left-eleven{margin-left:68.75%}
-	.m-offset-left-twelve{margin-left:75%}
-	.m-offset-left-thirteen{margin-left:81.25%}
-	.m-offset-left-fourteen{margin-left:87.5%}
-	.m-offset-left-fifteen{margin-left:93.75%}
-	.m-offset-left-sixteen, .m-offset-left-full{margin-left:100%}
 	
    }
    @media(min-width:768px) {/*and (max-width:900px) big tablets have pc design*/
@@ -56,117 +13,14 @@ padding:0 0;
    */
 
 	
-	.t-offset-right-one{margin-right:6.25%}
-	.t-offset-right-two{margin-right:12.5%}
-	.t-offset-right-three{margin-right:18.75%}
-	.t-offset-right-four, .t-offset-right-quarter{margin-right:25%}
-	.t-offset-right-five{margin-right:31.25%}
-	.t-offset-right-six{margin-right:37.5%}
-	.t-offset-right-seven{margin-right:43.75%}
-	.t-offset-right-eight, .t-offset-right-half{margin-right:50%}
-	.t-offset-right-nine{margin-right:56.25%}
-	.t-offset-right-ten{margin-right:62.5%}
-	.t-offset-right-eleven{margin-right:68.75%}
-	.t-offset-right-twelve{margin-right:75%}
-	.t-offset-right-thirteen{margin-right:81.25%}
-	.t-offset-right-fourteen{margin-right:87.5%}
-	.t-offset-right-fifteen{margin-right:93.75%}
-	.t-offset-right-sixteen, .t-offset-right-full{margin-right:100%}
- 
-	.t-offset-left-one{margin-left:6.25%}
-	.t-offset-left-two{margin-left:12.5%}
-	.t-offset-left-three{margin-left:18.75%}
-	.t-offset-left-four, .t-offset-left-quarter{margin-left:25%}
-	.t-offset-left-five{margin-left:31.25%}
-	.t-offset-left-six{margin-left:37.5%}
-	.t-offset-left-seven{margin-left:43.75%}
-	.t-offset-left-eight, .t-offset-left-half{margin-left:50%}
-	.t-offset-left-nine{margin-left:56.25%}
-	.t-offset-left-ten{margin-left:62.5%}
-	.t-offset-left-eleven{margin-left:68.75%}
-	.t-offset-left-twelve{margin-left:75%}
-	.t-offset-left-thirteen{margin-left:81.25%}
-	.t-offset-left-fourteen{margin-left:87.5%}	
-	.t-offset-left-fifteen{margin-left:93.75%}
-	.t-offset-left-sixteen, .offset-left-full{margin-left:100%}
-	
 
    }
    @media(min-width:901px){/*computers*/
    /*---------------------------automatic responsivenes----------------*/
 
 	
-	.c-offset-right-one{margin-right:6.25%}
-	.c-offset-right-two{margin-right:12.5%}
-	.c-offset-right-three{margin-right:18.75%}
-	.c-offset-right-four, .c-offset-right-quarter{margin-right:25%}
-	.c-offset-right-five{margin-right:31.25%}
-	.c-offset-right-six{margin-right:37.5%}
-	.c-offset-right-seven{margin-right:43.75%}
-	.c-offset-right-eight, .c-offset-right-half{margin-right:50%}
-	.c-offset-right-nine{margin-right:56.25%}
-	.c-offset-right-ten{margin-right:62.5%}
-	.c-offset-right-eleven{margin-right:68.75%}
-	.c-offset-right-twelve{margin-right:75%}
-	.c-offset-right-thirteen{margin-right:81.25%}
-	.c-offset-right-fourteen{margin-right:87.5%}
-	.c-offset-right-fifteen{margin-right:93.75%}
-	.c-offset-right-sixteen, .c-offset-right-full{margin-right:100%}
- 
-	.c-offset-left-one{margin-left:6.25%}
-	.c-offset-left-two{margin-left:12.5%}
-	.c-offset-left-three{margin-left:18.75%}
-	.c-offset-left-four, .c-offset-left-quarter{margin-left:25%}
-	.c-offset-left-five{margin-left:31.25%}
-	.c-offset-left-six{margin-left:37.5%}
-	.c-offset-left-seven{margin-left:43.75%}
-	.c-offset-left-eight, .c-offset-left-half{margin-left:50%}
-	.c-offset-left-nine{margin-left:56.25%}
-	.c-offset-left-ten{margin-left:62.5%}
-	.c-offset-left-eleven{margin-left:68.75%}
-	.c-offset-left-twelve{margin-left:75%}
-	.c-offset-left-thirteen{margin-left:81.25%}
-	.c-offset-left-fourteen{margin-left:87.5%}
-	.c-offset-left-fifteen{margin-left:93.75%}
-	.c-offset-left-sixteen, .c-offset-left-full{margin-left:100%}
-	
-	
    }
    
-   .offset-right-one{margin-right:6.25%}
-   .offset-right-two{margin-right:12.5%}
-   .offset-right-three{margin-right:18.75%}
-   .offset-right-four, .offset-right-quarter{margin-right:25%}
-   .offset-right-five{margin-right:31.25%}
-   .offset-right-six{margin-right:37.5%}
-   .offset-right-seven{margin-right:43.75%}
-   .offset-right-eight, .offset-right-half{margin-right:50%}
-   .offset-right-nine{margin-right:56.25%}
-   .offset-right-ten{margin-right:62.5%}
-   .offset-right-eleven{margin-right:68.75%}
-   .offset-right-twelve{margin-right:75%}
-   .offset-right-thirteen{margin-right:81.25%}
-   .offset-right-fourteen{margin-right:87.5%}
-   .offset-right-fifteen{margin-right:93.75%}
-   .offset-right-sixteen, .offset-right-full{margin-right:100%}
-
-   .offset-left-one{margin-left:6.25%}
-   .offset-left-two{margin-left:12.5%}
-   .offset-left-three{margin-left:18.75%}
-   .offset-left-four, .offset-left-quarter{margin-left:25%}
-   .offset-left-five{margin-left:31.25%}
-   .offset-left-six{margin-left:37.5%}
-   .offset-left-seven{margin-left:43.75%}
-   .offset-left-eight, .offset-left-half{margin-left:50%}
-   .offset-left-nine{margin-left:56.25%}
-   .offset-left-ten{margin-left:62.5%}
-   .offset-left-eleven{margin-left:68.75%}
-   .offset-left-twelve{margin-left:75%}
-   .offset-left-thirteen{margin-left:81.25%}
-   .offset-left-fourteen{margin-left:87.5%}
-   .offset-left-fifteen{margin-left:93.75%}
-   .offset-left-sixteen, .offset-left-full{margin-left:100%}
-	  
 
 
 /* 

@@ -8,10 +8,26 @@ means
 .container > .column {}
 that way column can mean anything, or doesnt even need to have a div
 */
+* {
+	box-sizing: border-box;
+}
 
+
+img {
+	max-width:100%;
+}
+
+html { 
+	font-size: 1em;
+    }	
+    
+
+/*---------------*/
 .flexbox {
     width:100%;
     display:flex;
+    margin-right:auto;
+    margin-left:auto;
 }
 .row {
     display:flex;
@@ -34,9 +50,6 @@ that way column can mean anything, or doesnt even need to have a div
 }
 .row .row {
     padding:0;
-}
-.singleline {
-    flex-wrap:nowrap;
 }
 /*-----------container rules--------*/
     
@@ -104,8 +117,18 @@ that way column can mean anything, or doesnt even need to have a div
 .content-bottom {align-items:flex-end!important}
 .content-top {align-content:flex-start!important}
 
+.all-center {align-items:center;justify-content:center;text-align:center;}
+.items-centralized {align-items:center;justify-content:center;}
+.content-centralized {align-content:center;justify-content:center;}
+
+.text-center {text-align:center}
+
 
 /**/
+
+.break {
+    width: 100%!important;
+}
 .fill {/*size will be whateaver is left over*/
 	width:0%!important;
 	flex-grow:1!important;
@@ -115,9 +138,12 @@ that way column can mean anything, or doesnt even need to have a div
 	width:auto;
 	flex-grow:initial;
 }
-.equal > * {
+.equal > *{
     width:0%;
     flex-grow:1;
+}
+.singleline {
+	flex-wrap:nowrap;
 }
 
 .m-equal > *{
@@ -162,7 +188,41 @@ that way column can mean anything, or doesnt even need to have a div
 
     
 /*---------------------------automatic responsivenes----------------*/
- 
+
+.offset-right-one{margin-right:6.25%}
+.offset-right-two{margin-right:12.5%}
+.offset-right-three{margin-right:18.75%}
+.offset-right-four, .offset-right-quarter{margin-right:25%}
+.offset-right-five{margin-right:31.25%}
+.offset-right-six{margin-right:37.5%}
+.offset-right-seven{margin-right:43.75%}
+.offset-right-eight, .offset-right-half{margin-right:50%}
+.offset-right-nine{margin-right:56.25%}
+.offset-right-ten{margin-right:62.5%}
+.offset-right-eleven{margin-right:68.75%}
+.offset-right-twelve{margin-right:75%}
+.offset-right-thirteen{margin-right:81.25%}
+.offset-right-fourteen{margin-right:87.5%}
+.offset-right-fifteen{margin-right:93.75%}
+.offset-right-sixteen, .offset-right-full{margin-right:100%}
+
+.offset-left-one{margin-left:6.25%}
+.offset-left-two{margin-left:12.5%}
+.offset-left-three{margin-left:18.75%}
+.offset-left-four, .offset-left-quarter{margin-left:25%}
+.offset-left-five{margin-left:31.25%}
+.offset-left-six{margin-left:37.5%}
+.offset-left-seven{margin-left:43.75%}
+.offset-left-eight, .offset-left-half{margin-left:50%}
+.offset-left-nine{margin-left:56.25%}
+.offset-left-ten{margin-left:62.5%}
+.offset-left-eleven{margin-left:68.75%}
+.offset-left-twelve{margin-left:75%}
+.offset-left-thirteen{margin-left:81.25%}
+.offset-left-fourteen{margin-left:87.5%}
+.offset-left-fifteen{margin-left:93.75%}
+.offset-left-sixteen, .offset-left-full{margin-left:100%}
+   
 .size-one 										{width:25%}
 .size-two			 								{width:25%}
 .size-three 									{width:50%}
@@ -214,6 +274,7 @@ that way column can mean anything, or doesnt even need to have a div
 .fifteen{width:100%}
 .sixteen, .full{width:100%}
 
+.equal-one > *    {width:100%; }
 .equal-two > *    {width:100%;}
 .equal-three > *  {width:100%;}
 .equal-four > *   {width:100%;}
@@ -411,6 +472,41 @@ that way column can mean anything, or doesnt even need to have a div
     max-width:800px;
 }
 /*other*/
+
+.c-offset-right-one{margin-right:6.25%}
+.c-offset-right-two{margin-right:12.5%}
+.c-offset-right-three{margin-right:18.75%}
+.c-offset-right-four, .c-offset-right-quarter{margin-right:25%}
+.c-offset-right-five{margin-right:31.25%}
+.c-offset-right-six{margin-right:37.5%}
+.c-offset-right-seven{margin-right:43.75%}
+.c-offset-right-eight, .c-offset-right-half{margin-right:50%}
+.c-offset-right-nine{margin-right:56.25%}
+.c-offset-right-ten{margin-right:62.5%}
+.c-offset-right-eleven{margin-right:68.75%}
+.c-offset-right-twelve{margin-right:75%}
+.c-offset-right-thirteen{margin-right:81.25%}
+.c-offset-right-fourteen{margin-right:87.5%}
+.c-offset-right-fifteen{margin-right:93.75%}
+.c-offset-right-sixteen, .c-offset-right-full{margin-right:100%}
+
+.c-offset-left-one{margin-left:6.25%}
+.c-offset-left-two{margin-left:12.5%}
+.c-offset-left-three{margin-left:18.75%}
+.c-offset-left-four, .c-offset-left-quarter{margin-left:25%}
+.c-offset-left-five{margin-left:31.25%}
+.c-offset-left-six{margin-left:37.5%}
+.c-offset-left-seven{margin-left:43.75%}
+.c-offset-left-eight, .c-offset-left-half{margin-left:50%}
+.c-offset-left-nine{margin-left:56.25%}
+.c-offset-left-ten{margin-left:62.5%}
+.c-offset-left-eleven{margin-left:68.75%}
+.c-offset-left-twelve{margin-left:75%}
+.c-offset-left-thirteen{margin-left:81.25%}
+.c-offset-left-fourteen{margin-left:87.5%}
+.c-offset-left-fifteen{margin-left:93.75%}
+.c-offset-left-sixteen, .c-offset-left-full{margin-left:100%}
+
 
     /*---------------------------automatic responsivenes----------------*/
  
@@ -716,41 +812,164 @@ that way column can mean anything, or doesnt even need to have a div
     width:100%;
 }
 @media(max-width:768px) {
+	html {
+		font-size:1.15em;
+	}
     .container[class*="m-size-"],.small[class*="m-size-"],.medium[class*="m-size-"],.fluid[class*="m-size-"],[class*=" size-"][class*="m-size-"]{ 
         /*when using based on premade container, only unlimit width on the breakpoint you chose.*/
         /*if using with row, unlimit on the breakpoint and above*/
         max-width:none;
     }
+    .m-text-center{text-align:center;}
+    .m-break {width:100%;}
+    .m-singleline {flex-wrap:nowrap;}
+    .m-multiline {flex-wrap:wrap;}
+    .m-first{order:-1;}
+    .m-last{order:999;}	
+    
+	.m-offset-right-one{margin-right:6.25%}
+	.m-offset-right-two{margin-right:12.5%}
+	.m-offset-right-three{margin-right:18.75%}
+	.m-offset-right-four, .m-offset-right-quarter{margin-right:25%}
+	.m-offset-right-five{margin-right:31.25%}
+	.m-offset-right-six{margin-right:37.5%}
+	.m-offset-right-seven{margin-right:43.75%}
+	.m-offset-right-eight, .m-offset-right-half{margin-right:50%}
+	.m-offset-right-nine{margin-right:56.25%}
+	.m-offset-right-ten{margin-right:62.5%}
+	.m-offset-right-eleven{margin-right:68.75%}
+	.m-offset-right-twelve{margin-right:75%}
+	.m-offset-right-thirteen{margin-right:81.25%}
+	.m-offset-right-fourteen{margin-right:87.5%}
+	.m-offset-right-fifteen{margin-right:93.75%}
+	.m-offset-right-sixteen, .m-offset-right-full{margin-right:100%}
+ 
+	.m-offset-left-one{margin-left:6.25%}
+	.m-offset-left-two{margin-left:12.5%}
+	.m-offset-left-three{margin-left:18.75%}
+	.m-offset-left-four, .m-offset-left-quarter{margin-left:25%}
+	.m-offset-left-five{margin-left:31.25%}
+	.m-offset-left-six{margin-left:37.5%}
+	.m-offset-left-seven{margin-left:43.75%}
+	.m-offset-left-eight, .m-offset-left-half{margin-left:50%}
+	.m-offset-left-nine{margin-left:56.25%}
+	.m-offset-left-ten{margin-left:62.5%}
+	.m-offset-left-eleven{margin-left:68.75%}
+	.m-offset-left-twelve{margin-left:75%}
+	.m-offset-left-thirteen{margin-left:81.25%}
+	.m-offset-left-fourteen{margin-left:87.5%}
+	.m-offset-left-fifteen{margin-left:93.75%}
+	.m-offset-left-sixteen, .m-offset-left-full{margin-left:100%}
+	
 }
 @media(min-width:768px) and (max-width:900px){
+    html {
+        font-size:0.9em;
+    }
     .container[class*="t-size-"],.small[class*="t-size-"],.medium[class*="t-size-"],.fluid[class*="t-size-"],[class*=" size-"][class*="t-size-"]{ 
         max-width: none;
     }
+    .t-text-center{text-align:center;}
+    .t-break {width:100%;}
+    .t-singleline {flex-wrap:nowrap;}
+    .t-multiline {flex-wrap:wrap;}
+	.t-first {order:-1;}
+    .t-last {order:999;}   	
+    .stack-first{
+        order:-1;
+    }
+    
+    .stack-last{
+        order:999;
+    }
+    
+	.stack-first{
+		order:-1;
+    }
+	.stack-last{
+		order:999;
+    }
+    
+	.t-offset-right-one{margin-right:6.25%}
+	.t-offset-right-two{margin-right:12.5%}
+	.t-offset-right-three{margin-right:18.75%}
+	.t-offset-right-four, .t-offset-right-quarter{margin-right:25%}
+	.t-offset-right-five{margin-right:31.25%}
+	.t-offset-right-six{margin-right:37.5%}
+	.t-offset-right-seven{margin-right:43.75%}
+	.t-offset-right-eight, .t-offset-right-half{margin-right:50%}
+	.t-offset-right-nine{margin-right:56.25%}
+	.t-offset-right-ten{margin-right:62.5%}
+	.t-offset-right-eleven{margin-right:68.75%}
+	.t-offset-right-twelve{margin-right:75%}
+	.t-offset-right-thirteen{margin-right:81.25%}
+	.t-offset-right-fourteen{margin-right:87.5%}
+	.t-offset-right-fifteen{margin-right:93.75%}
+	.t-offset-right-sixteen, .t-offset-right-full{margin-right:100%}
+ 
+	.t-offset-left-one{margin-left:6.25%}
+	.t-offset-left-two{margin-left:12.5%}
+	.t-offset-left-three{margin-left:18.75%}
+	.t-offset-left-four, .t-offset-left-quarter{margin-left:25%}
+	.t-offset-left-five{margin-left:31.25%}
+	.t-offset-left-six{margin-left:37.5%}
+	.t-offset-left-seven{margin-left:43.75%}
+	.t-offset-left-eight, .t-offset-left-half{margin-left:50%}
+	.t-offset-left-nine{margin-left:56.25%}
+	.t-offset-left-ten{margin-left:62.5%}
+	.t-offset-left-eleven{margin-left:68.75%}
+	.t-offset-left-twelve{margin-left:75%}
+	.t-offset-left-thirteen{margin-left:81.25%}
+	.t-offset-left-fourteen{margin-left:87.5%}	
+	.t-offset-left-fifteen{margin-left:93.75%}
+	.t-offset-left-sixteen, .t-offset-left-full{margin-left:100%}
+	
 }
 
 @media(min-width:901px) and (max-width:1149px){
     .container[class*="c-size-"],.small[class*="c-size-"],.medium[class*="c-size-"],.fluid[class*="c-size-"],[class*=" size-"][class*="c-size-"]{ 
         max-width:none;
     }
+
+    
+.c-text-center{text-align:center;}
+.c-break {width:100%;}
+.c-singleline {flex-wrap:nowrap;}
+.c-multiline {flex-wrap:wrap;}
 }
 @media(min-width:1150px) and (max-width:1649px){
     
     .container[class*="lg-size-"],.small[class*="lg-size-"],.medium[class*="lg-size-"],.fluid[class*="lg-size-"],[class*=" size-"][class*="lg-size-"]{ 
         max-width:none;
     }
+    .lg-text-center{text-align:center;}
+    .lg-break {width:100%;}
+    .lg-singleline {flex-wrap:nowrap;}
+    .lg-multiline {flex-wrap:wrap;}
+
+    
 }
 
 @media(min-width:1650px) and (max-width:2999px){
     .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
-
         max-width:none;
     }
+    .xl-text-center{text-align:center;}
+    .xl-break {width:100%;}
+    .xl-singleline {flex-wrap:nowrap;}
+    .xl-multiline {flex-wrap:wrap;}
+    
 }
 
 @media(min-width:3000px){
     .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
         max-width:none;
     }
+    .xxl-text-center{text-align:center;}
+    .xxl-break {width:100%;}
+    .xxl-singleline {flex-wrap:nowrap;}
+    .xxl-multiline {flex-wrap:wrap;}
+    
 }
 
 .self-no-gutter {
