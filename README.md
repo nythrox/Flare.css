@@ -179,7 +179,13 @@ singleline* | on * breakpoint, row will be a single line
 multiline* | flexbox can have multiple lines
 fullheight | will have a 100vh height
 nomax | will have no max width 
+
+<h1>Other Attributes</h1>
+
+tag | description
+------ | ------
 text-center* | on * brekapoint text will be centralized 
+hide* | on * breakpoint the item will be hidden
 
 <h1>Browser Support</h1>
 <ul>
