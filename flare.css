@@ -163,9 +163,6 @@ html {
 
  .flexbox {flex-wrap:wrap;}
  
- [class*="m-size-"]{
-    max-width:none;
-}
     .container {
         width:100%;
         /* padding-right:8%;
@@ -299,9 +296,7 @@ html {
 
 @media(min-width:768px){/*bigger tablets will have a computer-like layout. smaller ones will count as phones*/
 /*lots of container space so items can be side by side*/
-[class*="t-size-"]{
-    max-width:none;
-}
+
 
 .container {
     width:100%;
@@ -413,9 +408,7 @@ html {
         flex-grow:1;
     }
 /*-----------------container types-------------*/
-[class*="c-size-"]{
-    max-width:none;
-}
+
 .container {
     width:100%;
     max-width:900px;
@@ -496,7 +489,26 @@ html {
     .equal-ten > *        { width:10%;}
     .equal-eleven > *     { width:9.09090909%;}
     .equal-twelve > *     { width:8.3333333%;} 
- 
+
+
+	.one{ width:6.25%}
+	.two{ width:12.5%}
+	.three{ width:18.75%}
+	.four, .quarter{ width:25%}
+	.five{ width:31.25%}
+	.six{ width:37.5%}
+	.seven{ width:43.75%}
+	.eight, .half{ width:50%;}
+	.nine{ width:56.25%}
+	.ten{ width:62.5%}
+	.eleven{ width:68.75%}
+	.twelve{ width:75%}
+	.thirteen{ width:81.25%}
+	.fourteen{ width:87.5%}
+	.fifteen{ width:93.75%}
+    .sixteen, .full{ width:100%}
+
+
     .c-equal-one > *        { width:100%; }
     .c-equal-two > *        { width:50%; }
     .c-equal-three > *      {	width:33.3333333%;}
@@ -509,23 +521,23 @@ html {
     .c-equal-ten > *        {width:10%;}
     .c-equal-eleven > *     {width:9.09090909%;}
     .c-equal-twelve > *     {width:8.3333333%;}
-
-	.one,.c-one{ width:6.25%}
-	.two,.c-two{ width:12.5%}
-	.three,.c-three{ width:18.75%}
-	.four,.c-four, .quarter,.c-quarter{ width:25%}
-	.five,.c-five{ width:31.25%}
-	.six,.c-six{ width:37.5%}
-	.seven,.c-seven{ width:43.75%}
-	.eight,.c-eight, .half,.c-half{ width:50%;}
-	.nine,.c-nine{ width:56.25%}
-	.ten,.c-ten{ width:62.5%}
-	.eleven,.c-eleven{ width:68.75%}
-	.twelve,.c-twelve{ width:75%}
-	.thirteen,.c-thirteen{ width:81.25%}
-	.fourteen,.c-fourteen{ width:87.5%}
-	.fifteen,.c-fifteen{ width:93.75%}
-    .sixteen,.c-sixteen, .full,.c-two{ width:100%}
+ 
+	.c-one{ width:6.25%}
+	.c-two{ width:12.5%}
+	.c-three{ width:18.75%}
+	.c-four, .c-quarter{ width:25%}
+	.c-five{ width:31.25%}
+	.c-six{ width:37.5%}
+	.c-seven{ width:43.75%}
+	.c-eight, .c-half{ width:50%;}
+	.c-nine{ width:56.25%}
+	.c-ten{ width:62.5%}
+	.c-eleven{ width:68.75%}
+	.c-twelve{ width:75%}
+	.c-thirteen{ width:81.25%}
+	.c-fourteen{ width:87.5%}
+	.c-fifteen{ width:93.75%}
+    .c-sixteen, .full,.c-two{ width:100%}
     
 	/* .c-one{width:6.25%}
 	.c-two{width:12.50%}
@@ -551,19 +563,16 @@ html {
 
 @media(min-width:1150px) { /*normal sized notebooks*/
     
-    [class*="lg-size-"]{
-        max-width:none;
-    }
     .container {
-        width:100%;
+        /* width:100%; */
         max-width:1140px;
     }
     .small {
-        width:100%;
+        /* width:100%; */
         max-width:900px;
     }
     .medium {
-        width:100%;
+        /* width:100%; */
         max-width:1040px;
     }
     .lg-equal-one > *        { width:100%; }
@@ -605,15 +614,15 @@ html {
         max-width:none;
     }
     .container {
-        width:100%;
+        /* width:100%; */
         max-width:1540px;
     }
     .small {
-        width:100%;
+        /* width:100%; */
         max-width:1300px;
     }
     .medium {
-        width:100%;
+        /* width:100%; */
         max-width:1440px;
     }
 
@@ -648,22 +657,20 @@ html {
 	.xl-sixteen, .xl-full{width:100%}   
 }
 @media(min-width:3000px) {
-    [class*="xxl-size-"]{
-        max-width:none;
-    }
+    
     .container {
-        width:100%;
+        /* width:100%; */
         max-width:1540px;
     }
     .small {
-        width:100%;
+        /* width:100%; */
         max-width:1300px;
     }
     .medium {
-        width:100%;
+        /* width:100%; */
         max-width:1440px;
     }
-    
+
     .xxl-equal-one > *        { width:100%; }
     .xxl-equal-two > *        { width:50%; }
     .xxl-equal-three > *      {	width:33.3333333%;}
@@ -697,21 +704,18 @@ html {
     
     }
 
-[class*=" size-"]/*:not(.maxwidth)*/{/*no max-width for those who are using container size-number instead of container small/container/medium*/
-    max-width:none;
-}
 .title {
     width:100%;
 }
 @media(max-width:768px) {
+    
 	html {
 		font-size:1.15em;
-	}
-    .container[class*="m-size-"],.small[class*="m-size-"],.medium[class*="m-size-"],.fluid[class*="m-size-"],[class*=" size-"][class*="m-size-"]{ 
-        /*when using based on premade container, only unlimit width on the breakpoint you chose.*/
-        /*if using with row, unlimit on the breakpoint and above*/
-        max-width:none;
     }
+    .m-one, .m-two, .m-three, .m-four, .m-five, .m-six, .m-seven, .m-eight, .m-nine, .m-ten, .m-ten, .m-eleven, .m-twelve, .m-thirteen, .m-fourteen, .m-fifteen, .m-sixteen {
+        max-width:none;
+    }    
+
     .m-text-center{text-align:center;}
     .m-break {width:100%;}
     .m-singleline {flex-wrap:nowrap;}
@@ -759,9 +763,10 @@ html {
     html {
         font-size:0.9em;
     }
-    .container[class*="t-size-"],.small[class*="t-size-"],.medium[class*="t-size-"],.fluid[class*="t-size-"],[class*=" size-"][class*="t-size-"]{ 
-        max-width: none;
+    .t-one, .t-two, .t-three, .t-four, .t-five, .t-six, .t-seven, .t-eight, .t-nine, .t-ten, .t-ten, .t-eleven, .t-twelve, .t-thirteen, .t-fourteen, .t-fifteen, .t-sixteen {
+        max-width:none;
     }
+
     .t-text-center{text-align:center;}
     .t-break {width:100%;}
     .t-singleline {flex-wrap:nowrap;}
@@ -821,23 +826,23 @@ html {
 }
 
 @media(min-width:901px) and (max-width:1149px){
-    
-    .container[class*="c-size-"],.small[class*="c-size-"],.medium[class*="c-size-"],.fluid[class*="c-size-"],[class*=" size-"][class*="c-size-"]{ 
-        max-width:none;
-    }
-
+    /*if its a number, and its on m-, then please dont have a max width*/
     
 .c-text-center{text-align:center;}
 .c-break {width:100%;}
 .c-singleline {flex-wrap:nowrap;}
 .c-multiline {flex-wrap:wrap;}
 .c-equal > *{width:0%;flex-grow:1;}
+
+}
+
+@media(min-width:901px){ /*C AND UP*/
+.c-one, .c-two, .c-three, .c-four, .c-five, .c-six, .c-seven, .c-eight, .c-nine, .c-ten, .c-ten, .c-eleven, .c-twelve, .c-thirteen, .c-fourteen, .c-fifteen, .c-sixteen {
+    max-width:none;
+}
 }
 @media(min-width:1150px) and (max-width:1649px){
     
-    .container[class*="lg-size-"],.small[class*="lg-size-"],.medium[class*="lg-size-"],.fluid[class*="lg-size-"],[class*=" size-"][class*="lg-size-"]{ 
-        max-width:none;
-    }
     .lg-text-center{text-align:center;}
     .lg-break {width:100%;}
     .lg-singleline {flex-wrap:nowrap;}
@@ -846,10 +851,14 @@ html {
     
 }
 
+@media(min-width:1150px){/*LG AND UP*/   
+.lg-one, .lg-two, .lg-three, .lg-four, .lg-five, .lg-six, .lg-seven, .lg-eight, .lg-nine, .lg-ten, .lg-ten, .lg-eleven, .lg-twelve, .lg-thirteen, .lg-fourteen, .lg-fifteen, .lg-sixteen {
+    max-width:none;
+}
+
+}
 @media(min-width:1650px) and (max-width:2999px){
-    .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
-        max-width:none;
-    }
+    
     .xl-text-center{text-align:center;}
     .xl-break {width:100%;}
     .xl-singleline {flex-wrap:nowrap;}
@@ -857,9 +866,13 @@ html {
     .xl-equal > *{width:0%;flex-grow:1;}
     
 }
-
-@media(min-width:3000px){
-    .container[class*="xl-size-"],.small[class*="xl-size-"],.medium[class*="xl-size-"],.fluid[class*="xl-size-"],[class*=" size-"][class*="xl-size-"]{ 
+@media(min-width:1650px) { /*XL AND UP*/
+    .xl-one, .xl-two, .xl-three, .xl-four, .xl-five, .xl-six, .xl-seven, .xl-eight, .xl-nine, .xl-ten, .xl-ten, .xl-eleven, .xl-twelve, .xl-thirteen, .xl-fourteen, .xl-fifteen, .xl-sixteen {
+        max-width:none;
+    }
+}
+@media(min-width:3000px){ /*xxl and up*/
+    .xxl-one, .xxl-two, .xxl-three, .xxl-four, .xxl-five, .xxl-six, .xxl-seven, .xxl-eight, .xxl-nine, .xxl-ten, .xxl-ten, .xxl-eleven, .xxl-twelve, .xxl-thirteen, .xxl-fourteen, .xxl-fifteen, .xxl-sixteen {
         max-width:none;
     }
     .xxl-text-center{text-align:center;}
