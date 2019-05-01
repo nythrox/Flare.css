@@ -67,7 +67,7 @@ html {
 .grow > * {flex-grow:1!important;}
 .self-grow {flex-grow:1!important;}
 
-.nogrow > *{flex-grow:0!important;}
+.nogrow > *{flex-grow:0!important;} 
 .self-nogrow{flex-grow:0!important}
 
 .shrink > * {flex-shrink:1!important}
@@ -833,12 +833,6 @@ html {
 @media(min-width:901px) and (max-width:1149px){
     /*if its a number, and its on m-, then please dont have a max width*/
     
-.c-text-center{text-align:center;}
-.c-break {width:100%;}
-.c-singleline {flex-wrap:nowrap;}
-.c-multiline {flex-wrap:wrap;}
-.c-equal > *{width:0%;flex-grow:1;}
-
 }
 
 @media(min-width:901px){ /*C AND UP*/
@@ -848,14 +842,16 @@ html {
 .c-hide {
     display:none;
 }   
+.c-text-center{text-align:center;}
+.c-break {width:100%;}
+.c-singleline {flex-wrap:nowrap;}
+.c-multiline {flex-wrap:wrap;}
+.c-equal > *{width:0%;flex-grow:1;}
+.c-first {order:-1;}
+.c-last {order:999;}
+
 }
 @media(min-width:1150px) and (max-width:1649px){
-    
-    .lg-text-center{text-align:center;}
-    .lg-break {width:100%;}
-    .lg-singleline {flex-wrap:nowrap;}
-    .lg-multiline {flex-wrap:wrap;}
-    .lg-equal > *{width:0%;flex-grow:1;}
     
 }
 
@@ -864,20 +860,28 @@ html {
     max-width:none;
 }
 
+.lg-text-center{text-align:center;}
+.lg-break {width:100%;}
+.lg-singleline {flex-wrap:nowrap;}
+.lg-multiline {flex-wrap:wrap;} 
+.lg-equal > *{width:0%;flex-grow:1;}
+.lg-first {order:-1;}
+.lg-last {order:999;}
 }
 @media(min-width:1650px) and (max-width:2999px){
-    
-    .xl-text-center{text-align:center;}
-    .xl-break {width:100%;}
-    .xl-singleline {flex-wrap:nowrap;}
-    .xl-multiline {flex-wrap:wrap;}
-    .xl-equal > *{width:0%;flex-grow:1;}
     
 }
 @media(min-width:1650px) { /*XL AND UP*/
     .xl-one, .xl-two, .xl-three, .xl-four, .xl-five, .xl-six, .xl-seven, .xl-eight, .xl-nine, .xl-ten, .xl-ten, .xl-eleven, .xl-twelve, .xl-thirteen, .xl-fourteen, .xl-fifteen, .xl-sixteen {
         max-width:none;
-    }
+    } 
+    .xl-text-center{text-align:center;}
+    .xl-break {width:100%;}
+    .xl-singleline {flex-wrap:nowrap;}
+    .xl-multiline {flex-wrap:wrap;}
+    .xl-equal > *{width:0%;flex-grow:1;}
+	.xl-first {order:-1;}
+    .xl-last {order:999;}
 }
 @media(min-width:3000px){ /*xxl and up*/
     .xxl-one, .xxl-two, .xxl-three, .xxl-four, .xxl-five, .xxl-six, .xxl-seven, .xxl-eight, .xxl-nine, .xxl-ten, .xxl-ten, .xxl-eleven, .xxl-twelve, .xxl-thirteen, .xxl-fourteen, .xxl-fifteen, .xxl-sixteen {
@@ -888,6 +892,8 @@ html {
     .xxl-singleline {flex-wrap:nowrap;}
     .xxl-multiline {flex-wrap:wrap;}
     .xxl-equal > *{width:0%;flex-grow:1;}
+	.xxl-first {order:-1;}
+    .xxl-last {order:999;}
     
 }
 
