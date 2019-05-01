@@ -178,7 +178,6 @@ html {
         width:100%;
         max-width:630px;
     }
-
     
 /*---------------------------automatic responsivenes----------------*/
 
@@ -758,6 +757,9 @@ html {
 	.m-offset-left-fifteen{margin-left:93.75%}
 	.m-offset-left-sixteen, .m-offset-left-full{margin-left:100%}
 	
+    .m-hide {
+        display:none;
+    }
 }
 @media(min-width:768px) and (max-width:900px){
     html {
@@ -789,6 +791,9 @@ html {
 		order:999;
     }
     
+    .t-hide {
+        display:none;
+    }
 	.t-offset-right-one{margin-right:6.25%}
 	.t-offset-right-two{margin-right:12.5%}
 	.t-offset-right-three{margin-right:18.75%}
@@ -840,6 +845,9 @@ html {
 .c-one, .c-two, .c-three, .c-four, .c-five, .c-six, .c-seven, .c-eight, .c-nine, .c-ten, .c-ten, .c-eleven, .c-twelve, .c-thirteen, .c-fourteen, .c-fifteen, .c-sixteen {
     max-width:none;
 }
+.c-hide {
+    display:none;
+}   
 }
 @media(min-width:1150px) and (max-width:1649px){
     
