@@ -91,13 +91,11 @@ html {
 .float-left, .self-left {
     margin-right:auto;
     margin-left:0;
-    order:-1;
 }
 
 .right {justify-content: flex-end!important}
 .float-right, .self-right {
     margin-left:auto;
-    order:999;
     margin-right:0;
 } 
 .center {justify-content: center!important}
@@ -125,7 +123,13 @@ html {
 
 
 /**/
-
+[class*="break"]{
+    height:0px!important;
+    padding:0px!important;
+    margin:0px!important;
+    min-height: 0px!important;
+    border:0px!important;
+}
 .break {
     width: 100%!important;
 }
