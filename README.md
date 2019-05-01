@@ -1,5 +1,5 @@
 <h1> Flare.css</h1>
-Flare is a modern CSS library that allows you to create responsive layouts with less code.
+Flare is a modern CSS library that allows you to create responsive layouts with less code. Flare also gives you faster and better ways to create layouts by using flexbox to its full potential.
 <h2>Automatic Responsiveness and Manual Responsiveness</h2>
 <p>
 Flare can handle responsiveness automatically but also gives you the option to manually control it.
