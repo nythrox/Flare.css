@@ -233,6 +233,19 @@ html {
 .size-fifteen 								{width:100%}
 .size-sixteen, .size-full 					{width:100%}
 
+.equal-one > *    {width:100%; }
+.equal-two > *    {width:100%;}
+.equal-three > *  {width:100%;}
+.equal-four > *   {width:100%;}
+.equal-five > *   {width:100%;}
+.equal-six > *    {width:50%;}
+.equal-seven > *  {width:33.333333%;}
+.equal-eight > *  {width:33.333333%;}
+.equal-nine > *   {width:33.333333%;}
+.equal-ten > *    {width:33.333333%;}
+.equal-eleven > * {width:33.333333%;}
+.equal-twelve > * {width:25%;}
+
 .one{width:25%}
 .two{width:25%}
 .three{width:50%}
@@ -249,19 +262,6 @@ html {
 .fourteen{width:100%}
 .fifteen{width:100%}
 .sixteen, .full{width:100%}
-
-.equal-one > *    {width:100%; }
-.equal-two > *    {width:100%;}
-.equal-three > *  {width:100%;}
-.equal-four > *   {width:100%;}
-.equal-five > *   {width:100%;}
-.equal-six > *    {width:50%;}
-.equal-seven > *  {width:33.333333%;}
-.equal-eight > *  {width:33.333333%;}
-.equal-nine > *   {width:33.333333%;}
-.equal-ten > *    {width:33.333333%;}
-.equal-eleven > * {width:33.333333%;}
-.equal-twelve > * {width:25%;}
 
 .m-equal-one > *        {width:100%; }
 .m-equal-two > *        {width:50%; }
@@ -336,6 +336,18 @@ html {
      .size-sixteen, .size-full 					    {width:100%}	
      
 
+	.equal-two > *        {width:100%; }
+	.equal-three > *      {width:100%;}
+	.equal-four > *       {width:50%;}
+	.equal-five > *       {width:33.3333333%;}
+	.equal-six > *        {width:33.3333333%;}
+	.equal-seven > *      {width:33.3333333%;}
+	.equal-eight > *      {width:25%;}
+	.equal-nine > *       {width:25%;}
+	.equal-ten > *        {width:20%;}
+	.equal-eleven > *     {width:20%;}
+    .equal-twelve > *     {width:16.6666667%;}
+
 	.one{width:12.5%}
 	.two{width:20%}
 	.three{width:22.2222222%;}
@@ -352,18 +364,6 @@ html {
 	.fourteen{width:100%}
 	.fifteen{width:100%}
 	.sixteen, .full{width:100%}
-
-	.equal-two > *        {width:100%; }
-	.equal-three > *      {width:100%;}
-	.equal-four > *       {width:50%;}
-	.equal-five > *       {width:33.3333333%;}
-	.equal-six > *        {width:33.3333333%;}
-	.equal-seven > *      {width:33.3333333%;}
-	.equal-eight > *      {width:25%;}
-	.equal-nine > *       {width:25%;}
-	.equal-ten > *        {width:20%;}
-	.equal-eleven > *     {width:20%;}
-    .equal-twelve > *     {width:16.6666667%;}
 
     .t-equal-one > *        { width:100%; }
     .t-equal-two > *        { width:50%; }
