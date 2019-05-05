@@ -1,6 +1,4 @@
 /*
-
-
 > * means column
 example
 .container > * {}
@@ -29,11 +27,18 @@ html {
     margin-right:auto;
     margin-left:auto;
 }
+
 .row {
     display:flex;
     flex-wrap:wrap;
-    margin-right:auto;
-    margin-left:auto;
+    width:100%;
+    align-items:flex-start;
+    align-content:flex-start;
+    justify-content:flex-start;
+}
+.row {
+    display:flex;
+    flex-wrap:wrap;
     width:100%;
 } /*use row instead of container*/
 .row:not(.flexbox) > *{
@@ -44,18 +49,21 @@ html {
     width:100%;
     flex-grow:0;
 }
-.row:not(.fluid){
-    padding-right:25px;
-    padding-left:25px;
-}
 .row .row {
-    padding:0;
+    padding-right:0;
+    padding-left:0;
 }
 /*-----------container rules--------*/
     
+.container, .small, .middle, [class*="size-"]{
+    margin-right:auto;
+    margin-left:auto;
+}
 .fluid {
     max-width:none;
     width:100%;
+    padding-right:25px;
+    padding-left:25px;
 }
 /*------------------container attributes------------*/
 .nomax {max-width:100%;}
@@ -112,8 +120,10 @@ html {
 /*content treats each line of the flexbox, instead of each column individually*/
 .content-stretch {align-content: stretch!important}
 .content-middle {align-content:center!important}
-.content-bottom {align-items:flex-end!important}
+.content-bottom {align-content:flex-end!important}
 .content-top {align-content:flex-start!important}
+.content-space-around {align-content:space-around!important}
+.content-space-between{align-content:space-between!important}
 
 .all-center {align-items:center;justify-content:center;text-align:center;}
 .items-centralized {align-items:center;justify-content:center;}
@@ -762,7 +772,7 @@ html {
 	.m-offset-left-sixteen, .m-offset-left-full{margin-left:100%}
 	
     .m-hide {
-        display:none;
+        display:none!important;
     }
 }
 @media(min-width:768px) and (max-width:900px){
@@ -796,7 +806,7 @@ html {
     }
     
     .t-hide {
-        display:none;
+        display:none!important;
     }
 	.t-offset-right-one{margin-right:6.25%}
 	.t-offset-right-two{margin-right:12.5%}
@@ -844,7 +854,7 @@ html {
     max-width:none;
 }
 .c-hide {
-    display:none;
+    display:none!important;
 }   
 .c-text-center{text-align:center;}
 .c-break {width:100%;}
