@@ -1,13 +1,16 @@
 <h1> Flare.css</h1>
 Flare is a modern CSS library that allows you to create responsive layouts with less code. Flare also gives you faster and better ways to create layouts, but doesn't impose on the way you have to code.
+
 <h2>Automatic Responsiveness and Manual Responsiveness</h2>
 <p>
 Flare can handle responsiveness automatically but also gives you the option to manually control it.
 </p>
 <p>When creating a layout, you have the option to define all column sizes on certain breakpoints, or to define the column sizes only on computer and let Flare handle the sizes on other breakpoints, or to combine both and let Flare handle sizes but overwrite them on certain breakpoints.</p>
+
 <h2>Block layout and Flex layout</h2>
-<p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs or even combine both.</p>
-<h2>More Containers, More sizes</h2>
+<p>Flare adds features so you can make different types of layouts that are not supported on other frameworks. You can build with block layout or flex layout depending on your needs and you can also combine both, getting only the parts of each that you need.</p>
+
+<h2>More Containers</h2>
 <p>Flare gives you many different sized containers, you can choose between container, container fluid, container small, container medium, container-one up to container-sixteen and customizable sizes on each breakpoint.</p>
 
 <h2>Light & Fast code, Faster workflows</h1>
@@ -15,8 +18,11 @@ Flare can handle responsiveness automatically but also gives you the option to m
 <p>You set the size you wish the columns to be on desktop and flare will find an ideal size for them on other devices.</p>
 <br>
 
+<h2>Better Tablet responsiveness</h2
+<p>Flare adapts container sizes so items look better on tablets and small computers.</p>
+
 <h1>Documentation</h1>
-<h2>Breakpoints and Size options</h2>
+<h2>Breakpoints</h2>
 <p>the breakpoints are:</p>
 <ul>
   <li>m (mobile)</li>
@@ -50,6 +56,12 @@ Flare can handle responsiveness automatically but also gives you the option to m
 @media(min-width:3000px){
 }
 </code>
+<h2>Priority</h2>
+When you have multiple tags trying to define the size of a column, what tag will the column obey? THe tag with the highest priority number. If its a zero then it wont follow any and will go to default width (row or flexbox default)
+[building using automatic responsiveness]: 
+first you set a automatic value, then you tweak it on certain breakpoints if needed
+if you set a equal-number value, if you want to overrite it on column (number, breakpoint-number) then you will treak it on certain breakpoints
+
 <h2>Column</h2>
 <p>
 Columns are the building blocks of flare. We can give them sizes and add
