@@ -54,7 +54,6 @@ html {
     padding-left:0;
 }
 /*-----------container rules--------*/
-    
 .container, .small, .middle, [class*="size-"]{
     margin-right:auto;
     margin-left:auto;
@@ -65,6 +64,10 @@ html {
     padding-right:25px;
     padding-left:25px;
 }
+/*absolute, relative, fixed, etc*/
+.relative {position:relative;}
+.absolute {position:absolute}
+.cover {top:0;bottom:0;right:0;left:0;}
 /*------------------container attributes------------*/
 .nomax {max-width:100%;}
 .fullheight {height:100vh;}
@@ -165,7 +168,7 @@ html {
 .flexbox > *{
     flex-grow:1;
 }
-.flexbox.multiline {
+.multiline {
     flex-wrap:wrap;
 }
 .flexbox[class*="equal-"]{
