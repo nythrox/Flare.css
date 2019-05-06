@@ -56,12 +56,6 @@ Flare can handle responsiveness automatically but also gives you the option to m
 @media(min-width:3000px){
 }
 </code>
-<h2>Priority</h2>
-When you have multiple tags trying to define the size of a column, what tag will the column obey? THe tag with the highest priority number. If its a zero then it wont follow any and will go to default width (row or flexbox default)
-[building using automatic responsiveness]: 
-first you set a automatic value, then you tweak it on certain breakpoints if needed
-if you set a equal-number value, if you want to overrite it on column (number, breakpoint-number) then you will treak it on certain breakpoints
-
 <h2>Column</h2>
 <p>
 Columns are the building blocks of flare. We can give them sizes and add
@@ -114,6 +108,29 @@ Overwrite behavior tags: grow, stretch, shrink, singleline, multiline, size-numb
 <p>If you dont like the result on a certain screen size, you can always add a extra modifier <code>column eight t&#8209;twelve</code> &#8209; Flare will handle on mobile, but on tablet it will have the size of twelve</p>
 <br>
 <p>Or if you dont want to use automatic responsiveness at all, you can build from mobile up using the breakpoint tags <code>column m&#8209;sixteen t&#8209;fourteen c&#8209;twelve</code> Without automatic responsiveness, each breakpoint tag counts for itself and up (Example: t&#8209;eight will make the column size eight for tablet, computer, television, etc)</p>
+
+
+<h2>Priority</h2>
+When you have multiple tags trying to define the size of a column, what tag will the column obey?
+[building using automatic responsiveness]: 
+first you set a automatic value, then you can tweak it on certain breakpoints if needed
+if you set only breakpoint values, the value you put will count for the breakpoint and up
+<h3>A row + container whoms columns have the size of one third on computer and on other screens flare handles sizes</h3>
+<code>
+<div class="row container equal-three">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+</div>
+</code>
+<h3>A row + container whoms columns have the size of one third on tablet and up, and the first column has a size of 100% on tablet</h3>
+<code>
+<div class="row container t-equal-three">
+    <div class="column t-sixteen"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+</div>
+</code>
 
 <h1>Attributes:</h1>
 <p>Column</p>
