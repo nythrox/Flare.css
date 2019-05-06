@@ -106,19 +106,19 @@ Manual Responsiveness (three columns per line on size mobile and up)
 
 <p>Inside of rows, columns behave with a block behavior.</p>
 <p>Inside of flexbox, columns behave with a flex behavior.</p>
-<h4>Block behavior: </h4>
-  Collumns will have defined sizes that will not grow or shrink. <br>
-  Columns in a line have the same vertical size (stretch). <br>
-  Columns overflowing will jump to the next line.<br>
+<h4>Block default behavior: </h4>
+  Collumns will have defined sizes that will not grow (nogrow). <br>
+  Columns in a line not have the same vertical size (nostretch). <br>
+  Columns overflowing will jump to the next line (multiline).<br>
 
 
-<h4>Flex behavior: </h4>
-  Collumns are sized acording to the size of their content (width:auto). <br>
+<h4>Flex default behavior: </h4>
+  Collumns are sized acording to the size of their content (auto). <br>
   Columns in a line have the same vertical size (stretch). <br>
-  Columns will grow to fill all empty space. <br>
-  Columns will shrink to fit in one line.</p><br>
+  Columns will grow to fill all empty space (grow). <br>
+  Columns will shrink to fit in one line (singleline).</p><br>
   
-<p>All default behaviors can be overwritten with tags (see column tags), and are only here to facilitate development</p>
+<p>All default behaviors can be overwritten with tags (grow, shrink, multiline, auto, number, equal, etc...)</p>
 
 Container Sizes: container, fluid, small, medium, size-number*
 <br>
