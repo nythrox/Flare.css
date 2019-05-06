@@ -151,8 +151,9 @@ html {
 	flex-grow:1!important;
 }
 .auto { /*size will depend on its content (flexbox default)*/
-    min-width:auto;
-	width:auto;
+    min-width:initial;
+    display:table;
+	width:max-content;
 	flex-grow:initial;
 }
 .equal > *{
