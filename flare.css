@@ -54,7 +54,7 @@ html {
     padding-left:0;
 }
 /*-----------container rules--------*/
-.container, .small, .middle, [class*="size-"]{
+.container, .small, .middle, [class*="size-"],[class*="-size-"]{
     margin-right:auto;
     margin-left:auto;
 }
