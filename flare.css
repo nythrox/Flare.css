@@ -57,12 +57,12 @@ html {
 .container, .small, .middle, [class*="size-"],[class*="-size-"]{
     margin-right:auto;
     margin-left:auto;
+    padding-right:25px;
+    padding-left:25px;
 }
 .fluid {
     max-width:none;
     width:100%;
-    padding-right:25px;
-    padding-left:25px;
 }
 /*absolute, relative, fixed, etc*/
 .relative {position:relative;}
