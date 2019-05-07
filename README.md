@@ -62,8 +62,11 @@ container, *eight* being 50%, *sixteen* being 100% and so on.
 <h4>Manual Responsiveness</h4>
 <p>You define the sizes of the columns on each device by using the tags m (mobile), t (tablet), c (computer). <code>[breakpoint]-(one..sixteen)</code></p>
 <p>For each breakpoint you choose, the size you set counts for the breakpoint and up. Example: <code>t-ten</code> will mean the column will have size 10 on tablets and up.</p>
+
 <h4>Automatic Responsiveness</h4>
-<p>You can let flare handle responsiveness by defining the sizes of the columns without a breakpoint prefix (<code>column eight</code> instead of <code>column c-eight</code>). If you want to change the size on a certain breakpoint, you can add breakpoint tags and they will only count for them self. Example:<code>column four</code> The column will have a size of four on computer and on the other sizes flare will handle it. <br><code>column four t-three</code> The column will have a size of four on computer, on tablet only it will have a size of three and on other sizes flare will handle it.
+<p>When giving a column a certain size <code>column eight</code> , you tell flare that you want it's size to be eight (half) at a computer screen, and flare will handle responsiveness on tablet and mobile.</p>
+<p>If you dont like the result on a certain screen size, you can always add a extra modifier <code>column eight t&#8209;twelve</code> &#8209; Flare will handle on mobile, but on tablet it will have the size of twelve</p>
+Example:<code>column four</code> The column will have a size of four on computer and on the other sizes flare will handle it. <br><code>column four t-three</code> The column will have a size of four on computer, on tablet only it will have a size of three and on other sizes flare will handle it.
 
 <p>To combine automatic with manual responsiveness, you can choose automatic responsiveness and then overwrite it on specific breakpoints.</p>
 <br> <code>column eight t-eight</code> means that flare will handle responsiveness on all devices except tablets, where the column will take the size of eight.
@@ -126,20 +129,8 @@ Overwrite behavior tags: grow, stretch, shrink, singleline, multiline, size-numb
 <br>
 * = has breakpoints (m- t- c- lg- xl- xxl-), if using not using breakpoint then flare handles its responsiveness
 
-<h1>Automatic Responsiveness</h1>
-<p>When giving a column a certain size <code>column eight</code> , you tell flare that you want it's size to be eight (half) at a computer screen, and flare will handle responsiveness on tablet and mobile.</p>
-<br>
-<p>If you dont like the result on a certain screen size, you can always add a extra modifier <code>column eight t&#8209;twelve</code> &#8209; Flare will handle on mobile, but on tablet it will have the size of twelve</p>
-<br>
-<p>Or if you dont want to use automatic responsiveness at all, you can build from mobile up using the breakpoint tags <code>column m&#8209;sixteen t&#8209;fourteen c&#8209;twelve</code> Without automatic responsiveness, each breakpoint tag counts for itself and up (Example: t&#8209;eight will make the column size eight for tablet, computer, television, etc)</p>
-
-
-<h2>Priority</h2>
-When you have multiple tags trying to define the size of a column, what tag will the column obey?
-[building using automatic responsiveness]: 
-first you set a automatic value, then you can tweak it on certain breakpoints if needed
-if you set only breakpoint values, the value you put will count for the breakpoint and up
-<h3>A row + container whoms columns have the size of one third on computer and on other screens flare handles sizes</h3>
+<h2>More Examples</h2>
+<h3>A row + container whos columns have the size of one third on computer and on other screens flare handles sizes</h3>
 
 ```
 <div class="row container equal-three">
@@ -149,11 +140,22 @@ if you set only breakpoint values, the value you put will count for the breakpoi
 </div>
 ```
 
-<h3>A row + container whoms columns have the size of one third on tablet and up, and the first column has a size of 100% on tablet</h3>
+<h3>A row + container whos columns have the size of one third on tablet and up, and the first column has a size of 100% on tablet and up</h3>
 
 ```
 <div class="row container t-equal-three">
     <div class="column t-sixteen"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+</div>
+```
+
+<h3>A row + container whos columns have the size of one fourth on computer and flare will handle responsiveness on other screens (equal-three), but the columns will be forced have the size of third of width on tablet (t-equal-three), and the first column will have a size of 100% on tablet (t-sixteen)</h3>
+
+```
+<div class="row container equal-four t-equal-three">
+    <div class="column t-sixteen"></div>
+    <div class="column"></div>
     <div class="column"></div>
     <div class="column"></div>
 </div>
