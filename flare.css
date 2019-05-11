@@ -73,7 +73,7 @@ html {
 .fullheight {height:100vh;}
 /*stretch, grow, etc for containers and columns*/
 .mx-auto > * {margin:auto;}
-.self-mx-auto {margin:auto;}
+.self-mx-auto, .margin-auto {margin:auto;}
 
 .grow > * {flex-grow:1!important;}
 .self-grow {flex-grow:1!important;}
