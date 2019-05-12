@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://nythrox.github.io/Flare.css/">
+  <a href="https://github.com/nythrox/Flare.css-Docs/examples/LANDING-PAGE/index.html">
     <img src="https://github.com/nythrox/Flare.css-Docs/blob/master/logo-cropped.png" alt="Flare logo" width="80">
   </a>
 </p>
@@ -7,7 +7,7 @@
 <p align="center">
   Modern lightweight CSS layout framework for faster and professional web development.
   <br>
-  <a href="https://nythrox.github.io/Flare.css/docs"><B>Documentation »</B></a>
+  <a href="https://nythrox.github.io/Flare.css-Docs/"><B>Documentation »</B></a>
   <br>
 </p>
 
