@@ -7,7 +7,7 @@
 <p align="center">
   Modern lightweight CSS layout framework for faster and professional web development.
   <br>
-  <a href="https://github.com/nythrox/Flare.css-Docs/examples/LANDING-PAGE/index.html"><B>Documentation »</B></a>
+  <a href="https://github.com/nythrox/Flare.css-Docs/"><B>Documentation »</B></a>
   <br>
 </p>
 
