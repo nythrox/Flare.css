@@ -1,10 +1,6 @@
 <p align="center">
   <a href="https://nythrox.github.io/Flare.css/">
-<<<<<<< HEAD
-    <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
-=======
     <img src="https://github.com/nythrox/Flare.css-Docs/blob/master/logo-cropped.png" alt="Flare logo" width="80">
->>>>>>> 14767e77a9828366b5f98243b149b7e6ec532f98
   </a>
 </p>
 <h3 align="center">Flare.css</h3>
