@@ -161,7 +161,7 @@ html {
     flex-grow:1;
 }
 .singleline {
-	flex-wrap:nowrap;
+	flex-wrap:nowrap!important;
 }
 
  /*@media(max-width:767px) phones and small tablets - small containers */
@@ -170,7 +170,7 @@ html {
     flex-grow:1;
 }
 .multiline {
-    flex-wrap:wrap;
+    flex-wrap:wrap!important;
 }
 .flexbox[class*="equal-"]{
     flex-wrap:wrap;
@@ -735,8 +735,8 @@ html {
 
     .m-text-center{text-align:center;}
     .m-break {width:100%;}
-    .m-singleline {flex-wrap:nowrap;}
-    .m-multiline {flex-wrap:wrap;}
+    .m-singleline {flex-wrap:nowrap!important;}
+    .m-multiline {flex-wrap:wrap!important;}
     .m-first{order:-1;}
     .m-last{order:999;}	
     .m-equal > *{width:0%;flex-grow:1;}
@@ -789,8 +789,8 @@ html {
 
     .t-text-center{text-align:center;}
     .t-break {width:100%;}
-    .t-singleline {flex-wrap:nowrap;}
-    .t-multiline {flex-wrap:wrap;}
+    .t-singleline {flex-wrap:nowrap!important;}
+    .t-multiline {flex-wrap:wrap!important;}
 	.t-first {order:-1;}
     .t-last {order:999;}
     .t-equal > *{width:0%;flex-grow:1;}	
@@ -862,8 +862,8 @@ html {
 }   
 .c-text-center{text-align:center;}
 .c-break {width:100%;}
-.c-singleline {flex-wrap:nowrap;}
-.c-multiline {flex-wrap:wrap;}
+.c-singleline {flex-wrap:nowrap!important;}
+.c-multiline {flex-wrap:wrap!important;}
 .c-equal > *{width:0%;flex-grow:1;}
 .c-first {order:-1;}
 .c-last {order:999;}
@@ -880,8 +880,8 @@ html {
 
 .lg-text-center{text-align:center;}
 .lg-break {width:100%;}
-.lg-singleline {flex-wrap:nowrap;}
-.lg-multiline {flex-wrap:wrap;} 
+.lg-singleline {flex-wrap:nowrap!important;}
+.lg-multiline {flex-wrap:wrap!important;} 
 .lg-equal > *{width:0%;flex-grow:1;}
 .lg-first {order:-1;}
 .lg-last {order:999;}
