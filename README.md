@@ -9,6 +9,7 @@
   <br>
   <a href="https://github.com/nythrox/Flare.css-Docs/"><B>Documentation »</B></a>
   <br>
+  <a href="https://github.com/nythrox/Flare.css/blob/master/README.pt.md"><B>Português</B></a>
 </p>
 
 <p align="center">

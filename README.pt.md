@@ -7,8 +7,9 @@
 <p align = "center">
   Framework para criar layouts modernos e leves em CSS para um desenvolvimento web mais rápido e profissional.
   <br>
-  <a href="https://github.com/nythrox/Flare.css-Docs/"> <B> Documentação »</B> </a>
+  <a href="https://github.com/nythrox/Flare.css-Docs/blob/master/README.pt.md"> <B> Documentação »</B> </a>
   <br>
+  <a href="https://github.com/nythrox/Flare.css/"><B>English</B></a>
 </p>
 
 <p align = "center">
