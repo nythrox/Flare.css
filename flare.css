@@ -81,8 +81,8 @@ html {
 .nogrow > *{flex-grow:0!important;} 
 .self-nogrow{flex-grow:0!important}
 
-.shrink > * {flex-shrink:1!important}
-.self-shrink {flex-shrink:1!important}
+.shrink > * {flex-shrink:2!important}
+.self-shrink {flex-shrink:2!important}
 
 .noshrink > * {flex-shrink:0!important}
 .self-noshrink {flex-shrink:0!important}
