@@ -82,10 +82,10 @@ html {
 .self-nogrow{flex-grow:0!important}
 
 .shrink > * {flex-shrink:1!important}
-.self-shrink > * {flex-shrink:1!important}
+.self-shrink {flex-shrink:1!important}
 
 .noshrink > * {flex-shrink:0!important}
-.self-noshrink > * {flex-shrink:0!important}
+.self-noshrink {flex-shrink:0!important}
 
 .stretch {align-items: stretch!important}
 .content-stretch {align-content: stretch!important}
