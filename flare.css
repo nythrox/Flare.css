@@ -149,11 +149,21 @@ html {
 .break {
     width: 100%!important;
 }
-.fill {/*size will be whateaver is left over*/
+.self-fill {/*size will be whateaver is left over*/
 	width:0%!important;
 	flex-grow:1!important;
 }
-.auto { /*size will depend on its content (flexbox default)*/
+.fill > *{/*size will be whateaver is left over*/
+	width:0%!important;
+	flex-grow:1!important;
+}
+.auto > *{ /*size will depend on its content (flexbox default)*/
+    min-width:initial!important;
+    display:table!important;
+	width:max-content!important;
+	flex-grow:initial!important;
+}
+.self-auto { /*size will depend on its content (flexbox default)*/
     min-width:initial!important;
     display:table!important;
 	width:max-content!important;
