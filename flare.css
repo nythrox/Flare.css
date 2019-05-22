@@ -98,6 +98,9 @@ html {
 /*positioning(right, left, top, bottom, middle) for containers*/
 .normal {align-items:flex-start!important;justify-content:flex-start!important;} 
 
+.first {order:-1;}
+.last {order:999;}
+
 .left {justify-content: flex-start!important}
 .float-left, .self-left {
     margin-right:auto;
