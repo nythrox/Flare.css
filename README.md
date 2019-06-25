@@ -8,6 +8,7 @@
   Modern lightweight CSS layout framework for faster and professional web development.
   <br>
   <a href="https://github.com/nythrox/Flare.css-Docs/"><B>Documentation »</B></a>
+  <a href="https://github.com/nythrox/Flare.css-Docs/tree/master/examples">Flare Website Examples »</a>
   <br>
   <a href="https://github.com/nythrox/Flare.css/blob/master/README.pt.md"><B>Português</B></a>
 </p>
